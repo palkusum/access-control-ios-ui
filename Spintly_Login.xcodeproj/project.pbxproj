@@ -1,0 +1,770 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C1676FB245057E900D7AC23 /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1676F9245057E900D7AC23 /* InformationVC.swift */; };
+		4C1676FC245057E900D7AC23 /* InformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1676FA245057E900D7AC23 /* InformationVC.xib */; };
+		4C1676FF245057FD00D7AC23 /* PermissionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1676FD245057FD00D7AC23 /* PermissionsVC.swift */; };
+		4C167700245057FD00D7AC23 /* PermissionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1676FE245057FD00D7AC23 /* PermissionsVC.xib */; };
+		4C1677032450586B00D7AC23 /* UserDetailContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1677012450586B00D7AC23 /* UserDetailContainerVC.swift */; };
+		4C1677042450586B00D7AC23 /* UserDetailContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1677022450586B00D7AC23 /* UserDetailContainerVC.xib */; };
+		4C1729B92437627F00D68D29 /* SideMenuListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729B72437627F00D68D29 /* SideMenuListTableViewCell.swift */; };
+		4C1729BA2437627F00D68D29 /* SideMenuListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1729B82437627F00D68D29 /* SideMenuListTableViewCell.xib */; };
+		4C1729BE24390C3100D68D29 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729BC24390C3100D68D29 /* HomeVC.swift */; };
+		4C1729C22439109E00D68D29 /* HelpAndSupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729C02439109E00D68D29 /* HelpAndSupportVC.swift */; };
+		4C1729C32439109E00D68D29 /* HelpAndSupportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1729C12439109E00D68D29 /* HelpAndSupportVC.xib */; };
+		4C1729C62439E62A00D68D29 /* SubMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729C42439E62A00D68D29 /* SubMenuViewCell.swift */; };
+		4C1729C72439E62A00D68D29 /* SubMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1729C52439E62A00D68D29 /* SubMenuViewCell.xib */; };
+		4C1729CA243AE3FE00D68D29 /* VisitorManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729C8243AE3FE00D68D29 /* VisitorManagementVC.swift */; };
+		4C1729CB243AE3FE00D68D29 /* VisitorManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1729C9243AE3FE00D68D29 /* VisitorManagementVC.xib */; };
+		4C1A8D6A2434A3A200CAD853 /* MainVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A8D692434A3A200CAD853 /* MainVC1.xib */; };
+		4C1A8D6C2434A56E00CAD853 /* MainVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A8D6B2434A56E00CAD853 /* MainVC1.swift */; };
+		4C1DB4E22409383400CF4228 /* PasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1DB4E12409383400CF4228 /* PasswordVC.xib */; };
+		4C23869E24497BCC00D83C4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C23869D24497BCC00D83C4B /* GoogleService-Info.plist */; };
+		4C2DD6C024351414008F3358 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2DD6BF24351414008F3358 /* MainVC.xib */; };
+		4C2DD6C2243515FF008F3358 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DD6C1243515FF008F3358 /* MainVC.swift */; };
+		4C2FF5A42449DE300025C9E1 /* AttributeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF5A22449DE300025C9E1 /* AttributeTableViewCell.swift */; };
+		4C2FF5A52449DE300025C9E1 /* AttributeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FF5A32449DE300025C9E1 /* AttributeTableViewCell.xib */; };
+		4C46765C23F04C3E00471622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46765B23F04C3E00471622 /* AppDelegate.swift */; };
+		4C46766023F04C3E00471622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46765F23F04C3E00471622 /* ViewController.swift */; };
+		4C46766523F04C3F00471622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C46766423F04C3F00471622 /* Assets.xcassets */; };
+		4C46766823F04C3F00471622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C46766623F04C3F00471622 /* LaunchScreen.storyboard */; };
+		4C46767A23F04EBF00471622 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46767823F04EBF00471622 /* PasswordVC.swift */; };
+		4C46767B23F04EBF00471622 /* Password2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46767923F04EBF00471622 /* Password2VC.xib */; };
+		4C46767E23F054ED00471622 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46767D23F054ED00471622 /* Extension.swift */; };
+		4C6A945D240D0D200021BE84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6A945C240D0D200021BE84 /* CardView.swift */; };
+		4C6BB16C244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */; };
+		4C6BB16D244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */; };
+		4C6BB16F244DB67B00CD9140 /* ToolbarPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BB16E244DB67B00CD9140 /* ToolbarPickerView.swift */; };
+		4C9D8F5424409815001C472B /* AccessHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9D8F5324409815001C472B /* AccessHistoryVC.xib */; };
+		4C9D8F5D244315FC001C472B /* AccessHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9D8F5B244315FC001C472B /* AccessHistoryTableViewCell.swift */; };
+		4C9D8F5E244315FC001C472B /* AccessHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9D8F5C244315FC001C472B /* AccessHistoryTableViewCell.xib */; };
+		4CB903922405AA2900D4F1D4 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB903912405AA2900D4F1D4 /* LoginVC.xib */; };
+		4CC726912446323A00518248 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC726902446323A00518248 /* HomeVC.xib */; };
+		4CC7269424463FD200518248 /* UserListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7269224463FD200518248 /* UserListTableViewCell.swift */; };
+		4CC7269524463FD200518248 /* UserListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC7269324463FD200518248 /* UserListTableViewCell.xib */; };
+		4CC72699244714E100518248 /* AddUserStep1VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC72697244714E100518248 /* AddUserStep1VC.swift */; };
+		4CC7269A244714E100518248 /* AddUserStep1VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC72698244714E100518248 /* AddUserStep1VC.xib */; };
+		4CC7269E24477DCD00518248 /* AddUserStep2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC7269C24477DCD00518248 /* AddUserStep2VC.swift */; };
+		4CC7269F24477DCD00518248 /* AddUserStep2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC7269D24477DCD00518248 /* AddUserStep2VC.xib */; };
+		4CC726A22448837F00518248 /* AddUserStep3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC726A02448837F00518248 /* AddUserStep3VC.swift */; };
+		4CC726A32448837F00518248 /* AddUserStep3VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CC726A12448837F00518248 /* AddUserStep3VC.xib */; };
+		4CCF78AA243DF0100074ECFD /* AccessHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF78A8243DF0100074ECFD /* AccessHistoryVC.swift */; };
+		4CCF78AE243DF02D0074ECFD /* UserManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF78AC243DF02D0074ECFD /* UserManagementVC.swift */; };
+		4CCF78AF243DF02D0074ECFD /* UserManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF78AD243DF02D0074ECFD /* UserManagementVC.xib */; };
+		4CCF78B2243DF0D90074ECFD /* LeaveManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF78B0243DF0D90074ECFD /* LeaveManagementVC.swift */; };
+		4CCF78B3243DF0D90074ECFD /* LeaveManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF78B1243DF0D90074ECFD /* LeaveManagementVC.xib */; };
+		4CCF78B6243DF0EC0074ECFD /* LeaveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF78B4243DF0EC0074ECFD /* LeaveVC.swift */; };
+		4CCF78B7243DF0EC0074ECFD /* LeaveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF78B5243DF0EC0074ECFD /* LeaveVC.xib */; };
+		4CCF78BA243DF1070074ECFD /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF78B8243DF1070074ECFD /* SettingsVC.swift */; };
+		4CCF78BB243DF1070074ECFD /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF78B9243DF1070074ECFD /* SettingsVC.xib */; };
+		4CCF78C6243E6CFA0074ECFD /* BarrierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCF78C4243E6CFA0074ECFD /* BarrierTableViewCell.swift */; };
+		4CCF78C7243E6CFA0074ECFD /* BarrierTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CCF78C5243E6CFA0074ECFD /* BarrierTableViewCell.xib */; };
+		4CD072F12400F444007BF693 /* Login2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD072F02400F444007BF693 /* Login2VC.xib */; };
+		4CD072F32400F456007BF693 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD072F22400F456007BF693 /* LoginVC.swift */; };
+		4CD072FD2402D7CB007BF693 /* ConfirmPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD072FB2402D7CB007BF693 /* ConfirmPasswordVC.swift */; };
+		4CD072FE2402D7CB007BF693 /* ConfirmPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD072FC2402D7CB007BF693 /* ConfirmPasswordVC.xib */; };
+		4CD073042403A634007BF693 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD073022403A634007BF693 /* SignupVC.swift */; };
+		4CD073052403A634007BF693 /* SignupVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD073032403A634007BF693 /* SignupVC.xib */; };
+		4CD1083215487A62FB5B7454 /* Pods_Spintly_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A3E39298E1B69C22BFD2C1 /* Pods_Spintly_Login.framework */; };
+		4CD495472403DB06003B2398 /* OtpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD495452403DB06003B2398 /* OtpVC.swift */; };
+		4CD495482403DB06003B2398 /* OtpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CD495462403DB06003B2398 /* OtpVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12A3E39298E1B69C22BFD2C1 /* Pods_Spintly_Login.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spintly_Login.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C1676F9245057E900D7AC23 /* InformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationVC.swift; sourceTree = "<group>"; };
+		4C1676FA245057E900D7AC23 /* InformationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationVC.xib; sourceTree = "<group>"; };
+		4C1676FD245057FD00D7AC23 /* PermissionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsVC.swift; sourceTree = "<group>"; };
+		4C1676FE245057FD00D7AC23 /* PermissionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsVC.xib; sourceTree = "<group>"; };
+		4C1677012450586B00D7AC23 /* UserDetailContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailContainerVC.swift; sourceTree = "<group>"; };
+		4C1677022450586B00D7AC23 /* UserDetailContainerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailContainerVC.xib; sourceTree = "<group>"; };
+		4C1729B72437627F00D68D29 /* SideMenuListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuListTableViewCell.swift; sourceTree = "<group>"; };
+		4C1729B82437627F00D68D29 /* SideMenuListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuListTableViewCell.xib; sourceTree = "<group>"; };
+		4C1729BC24390C3100D68D29 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		4C1729C02439109E00D68D29 /* HelpAndSupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndSupportVC.swift; sourceTree = "<group>"; };
+		4C1729C12439109E00D68D29 /* HelpAndSupportVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpAndSupportVC.xib; sourceTree = "<group>"; };
+		4C1729C42439E62A00D68D29 /* SubMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuViewCell.swift; sourceTree = "<group>"; };
+		4C1729C52439E62A00D68D29 /* SubMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuViewCell.xib; sourceTree = "<group>"; };
+		4C1729C8243AE3FE00D68D29 /* VisitorManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorManagementVC.swift; sourceTree = "<group>"; };
+		4C1729C9243AE3FE00D68D29 /* VisitorManagementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorManagementVC.xib; sourceTree = "<group>"; };
+		4C1A8D692434A3A200CAD853 /* MainVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC1.xib; sourceTree = "<group>"; };
+		4C1A8D6B2434A56E00CAD853 /* MainVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC1.swift; sourceTree = "<group>"; };
+		4C1DB4E12409383400CF4228 /* PasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordVC.xib; sourceTree = "<group>"; };
+		4C23869D24497BCC00D83C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C2DD6BF24351414008F3358 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		4C2DD6C1243515FF008F3358 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4C2FF5A22449DE300025C9E1 /* AttributeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeTableViewCell.swift; sourceTree = "<group>"; };
+		4C2FF5A32449DE300025C9E1 /* AttributeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeTableViewCell.xib; sourceTree = "<group>"; };
+		4C46765823F04C3E00471622 /* Spintly_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spintly_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C46765B23F04C3E00471622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C46765F23F04C3E00471622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C46766423F04C3F00471622 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C46766723F04C3F00471622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C46766923F04C3F00471622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C46767823F04EBF00471622 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		4C46767923F04EBF00471622 /* Password2VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Password2VC.xib; sourceTree = "<group>"; };
+		4C46767D23F054ED00471622 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4C6A945C240D0D200021BE84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccessBarriersTableViewCell.swift; sourceTree = "<group>"; };
+		4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccessBarriersTableViewCell.xib; sourceTree = "<group>"; };
+		4C6BB16E244DB67B00CD9140 /* ToolbarPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarPickerView.swift; sourceTree = "<group>"; };
+		4C9D8F5324409815001C472B /* AccessHistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessHistoryVC.xib; sourceTree = "<group>"; };
+		4C9D8F5B244315FC001C472B /* AccessHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		4C9D8F5C244315FC001C472B /* AccessHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		4CB903912405AA2900D4F1D4 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		4CC726902446323A00518248 /* HomeVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		4CC7269224463FD200518248 /* UserListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableViewCell.swift; sourceTree = "<group>"; };
+		4CC7269324463FD200518248 /* UserListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableViewCell.xib; sourceTree = "<group>"; };
+		4CC72697244714E100518248 /* AddUserStep1VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserStep1VC.swift; sourceTree = "<group>"; };
+		4CC72698244714E100518248 /* AddUserStep1VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserStep1VC.xib; sourceTree = "<group>"; };
+		4CC7269C24477DCD00518248 /* AddUserStep2VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserStep2VC.swift; sourceTree = "<group>"; };
+		4CC7269D24477DCD00518248 /* AddUserStep2VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserStep2VC.xib; sourceTree = "<group>"; };
+		4CC726A02448837F00518248 /* AddUserStep3VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserStep3VC.swift; sourceTree = "<group>"; };
+		4CC726A12448837F00518248 /* AddUserStep3VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserStep3VC.xib; sourceTree = "<group>"; };
+		4CCF78A8243DF0100074ECFD /* AccessHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessHistoryVC.swift; sourceTree = "<group>"; };
+		4CCF78AC243DF02D0074ECFD /* UserManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManagementVC.swift; sourceTree = "<group>"; };
+		4CCF78AD243DF02D0074ECFD /* UserManagementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserManagementVC.xib; sourceTree = "<group>"; };
+		4CCF78B0243DF0D90074ECFD /* LeaveManagementVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveManagementVC.swift; sourceTree = "<group>"; };
+		4CCF78B1243DF0D90074ECFD /* LeaveManagementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaveManagementVC.xib; sourceTree = "<group>"; };
+		4CCF78B4243DF0EC0074ECFD /* LeaveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveVC.swift; sourceTree = "<group>"; };
+		4CCF78B5243DF0EC0074ECFD /* LeaveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeaveVC.xib; sourceTree = "<group>"; };
+		4CCF78B8243DF1070074ECFD /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		4CCF78B9243DF1070074ECFD /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		4CCF78C4243E6CFA0074ECFD /* BarrierTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarrierTableViewCell.swift; sourceTree = "<group>"; };
+		4CCF78C5243E6CFA0074ECFD /* BarrierTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BarrierTableViewCell.xib; sourceTree = "<group>"; };
+		4CD072F02400F444007BF693 /* Login2VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login2VC.xib; sourceTree = "<group>"; };
+		4CD072F22400F456007BF693 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4CD072FB2402D7CB007BF693 /* ConfirmPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPasswordVC.swift; sourceTree = "<group>"; };
+		4CD072FC2402D7CB007BF693 /* ConfirmPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmPasswordVC.xib; sourceTree = "<group>"; };
+		4CD073022403A634007BF693 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
+		4CD073032403A634007BF693 /* SignupVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupVC.xib; sourceTree = "<group>"; };
+		4CD495452403DB06003B2398 /* OtpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpVC.swift; sourceTree = "<group>"; };
+		4CD495462403DB06003B2398 /* OtpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtpVC.xib; sourceTree = "<group>"; };
+		55386CCBA645381E92D45BEA /* Pods-Spintly_Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spintly_Login.release.xcconfig"; path = "Target Support Files/Pods-Spintly_Login/Pods-Spintly_Login.release.xcconfig"; sourceTree = "<group>"; };
+		EE5F9DC3028F797FF3FD3600 /* Pods-Spintly_Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Spintly_Login.debug.xcconfig"; path = "Target Support Files/Pods-Spintly_Login/Pods-Spintly_Login.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C46765523F04C3E00471622 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD1083215487A62FB5B7454 /* Pods_Spintly_Login.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340F4E3CCD8E761E3FF6171E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12A3E39298E1B69C22BFD2C1 /* Pods_Spintly_Login.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C1676F82450577C00D7AC23 /* User Detail */ = {
+			isa = PBXGroup;
+			children = (
+				4C1677012450586B00D7AC23 /* UserDetailContainerVC.swift */,
+				4C1677022450586B00D7AC23 /* UserDetailContainerVC.xib */,
+				4C1676F9245057E900D7AC23 /* InformationVC.swift */,
+				4C1676FA245057E900D7AC23 /* InformationVC.xib */,
+				4C1676FD245057FD00D7AC23 /* PermissionsVC.swift */,
+				4C1676FE245057FD00D7AC23 /* PermissionsVC.xib */,
+			);
+			path = "User Detail";
+			sourceTree = "<group>";
+		};
+		4C1729B2243754C500D68D29 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4C1729B72437627F00D68D29 /* SideMenuListTableViewCell.swift */,
+				4C1729B82437627F00D68D29 /* SideMenuListTableViewCell.xib */,
+				4C1729C42439E62A00D68D29 /* SubMenuViewCell.swift */,
+				4C1729C52439E62A00D68D29 /* SubMenuViewCell.xib */,
+				4CCF78C4243E6CFA0074ECFD /* BarrierTableViewCell.swift */,
+				4CCF78C5243E6CFA0074ECFD /* BarrierTableViewCell.xib */,
+				4C9D8F5B244315FC001C472B /* AccessHistoryTableViewCell.swift */,
+				4C9D8F5C244315FC001C472B /* AccessHistoryTableViewCell.xib */,
+				4CC7269224463FD200518248 /* UserListTableViewCell.swift */,
+				4CC7269324463FD200518248 /* UserListTableViewCell.xib */,
+				4C2FF5A22449DE300025C9E1 /* AttributeTableViewCell.swift */,
+				4C2FF5A32449DE300025C9E1 /* AttributeTableViewCell.xib */,
+				4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */,
+				4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4C1729BB24390BF600D68D29 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C1729BC24390C3100D68D29 /* HomeVC.swift */,
+				4CC726902446323A00518248 /* HomeVC.xib */,
+				4CCF78A8243DF0100074ECFD /* AccessHistoryVC.swift */,
+				4C9D8F5324409815001C472B /* AccessHistoryVC.xib */,
+				4CC726962447144D00518248 /* User Management */,
+				4CCF78B0243DF0D90074ECFD /* LeaveManagementVC.swift */,
+				4CCF78B1243DF0D90074ECFD /* LeaveManagementVC.xib */,
+				4C1729C8243AE3FE00D68D29 /* VisitorManagementVC.swift */,
+				4C1729C9243AE3FE00D68D29 /* VisitorManagementVC.xib */,
+				4CCF78B4243DF0EC0074ECFD /* LeaveVC.swift */,
+				4CCF78B5243DF0EC0074ECFD /* LeaveVC.xib */,
+				4CCF78B8243DF1070074ECFD /* SettingsVC.swift */,
+				4CCF78B9243DF1070074ECFD /* SettingsVC.xib */,
+				4C1729C02439109E00D68D29 /* HelpAndSupportVC.swift */,
+				4C1729C12439109E00D68D29 /* HelpAndSupportVC.xib */,
+				4C2DD6C1243515FF008F3358 /* MainVC.swift */,
+				4C2DD6BF24351414008F3358 /* MainVC.xib */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4C46764F23F04C3E00471622 = {
+			isa = PBXGroup;
+			children = (
+				4C46765A23F04C3E00471622 /* Spintly_Login */,
+				4C46765923F04C3E00471622 /* Products */,
+				64627EF420D70CEB5BEB527B /* Pods */,
+				340F4E3CCD8E761E3FF6171E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C46765923F04C3E00471622 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C46765823F04C3E00471622 /* Spintly_Login.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C46765A23F04C3E00471622 /* Spintly_Login */ = {
+			isa = PBXGroup;
+			children = (
+				4C1729BB24390BF600D68D29 /* View Controllers */,
+				4C1729B2243754C500D68D29 /* Cells */,
+				4C9710D3241B997100E3EADF /* Main */,
+				4C46767C23F054A600471622 /* CustomUIComponent */,
+				4C46766F23F04E3100471622 /* Login */,
+				4C46765B23F04C3E00471622 /* AppDelegate.swift */,
+				4C46765F23F04C3E00471622 /* ViewController.swift */,
+				4C46766423F04C3F00471622 /* Assets.xcassets */,
+				4C46766623F04C3F00471622 /* LaunchScreen.storyboard */,
+				4C46766923F04C3F00471622 /* Info.plist */,
+				4C23869D24497BCC00D83C4B /* GoogleService-Info.plist */,
+			);
+			path = Spintly_Login;
+			sourceTree = "<group>";
+		};
+		4C46766F23F04E3100471622 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4CD495442403DADA003B2398 /* OTP */,
+				4CD073012403A5C8007BF693 /* SignUp */,
+				4CD072EF2400F428007BF693 /* LoginMain */,
+				4C46767323F04E6F00471622 /* ConfirmPassword */,
+				4C46767223F04E6200471622 /* Password */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4C46767223F04E6200471622 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				4C46767823F04EBF00471622 /* PasswordVC.swift */,
+				4C46767923F04EBF00471622 /* Password2VC.xib */,
+				4C1DB4E12409383400CF4228 /* PasswordVC.xib */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		4C46767323F04E6F00471622 /* ConfirmPassword */ = {
+			isa = PBXGroup;
+			children = (
+				4CD072FB2402D7CB007BF693 /* ConfirmPasswordVC.swift */,
+				4CD072FC2402D7CB007BF693 /* ConfirmPasswordVC.xib */,
+			);
+			path = ConfirmPassword;
+			sourceTree = "<group>";
+		};
+		4C46767C23F054A600471622 /* CustomUIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				4C6A9455240D08130021BE84 /* CardView */,
+				4C46767D23F054ED00471622 /* Extension.swift */,
+				4C6BB16E244DB67B00CD9140 /* ToolbarPickerView.swift */,
+			);
+			path = CustomUIComponent;
+			sourceTree = "<group>";
+		};
+		4C6A9455240D08130021BE84 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				4C6A945C240D0D200021BE84 /* CardView.swift */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		4C9710D3241B997100E3EADF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4C1A8D692434A3A200CAD853 /* MainVC1.xib */,
+				4C1A8D6B2434A56E00CAD853 /* MainVC1.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4CC726962447144D00518248 /* User Management */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF78AC243DF02D0074ECFD /* UserManagementVC.swift */,
+				4CCF78AD243DF02D0074ECFD /* UserManagementVC.xib */,
+				4CC7269B24477CB300518248 /* Add User */,
+				4C1676F82450577C00D7AC23 /* User Detail */,
+			);
+			path = "User Management";
+			sourceTree = "<group>";
+		};
+		4CC7269B24477CB300518248 /* Add User */ = {
+			isa = PBXGroup;
+			children = (
+				4CC72697244714E100518248 /* AddUserStep1VC.swift */,
+				4CC72698244714E100518248 /* AddUserStep1VC.xib */,
+				4CC7269C24477DCD00518248 /* AddUserStep2VC.swift */,
+				4CC7269D24477DCD00518248 /* AddUserStep2VC.xib */,
+				4CC726A02448837F00518248 /* AddUserStep3VC.swift */,
+				4CC726A12448837F00518248 /* AddUserStep3VC.xib */,
+			);
+			path = "Add User";
+			sourceTree = "<group>";
+		};
+		4CD072EF2400F428007BF693 /* LoginMain */ = {
+			isa = PBXGroup;
+			children = (
+				4CD072F22400F456007BF693 /* LoginVC.swift */,
+				4CD072F02400F444007BF693 /* Login2VC.xib */,
+				4CB903912405AA2900D4F1D4 /* LoginVC.xib */,
+			);
+			path = LoginMain;
+			sourceTree = "<group>";
+		};
+		4CD073012403A5C8007BF693 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				4CD073022403A634007BF693 /* SignupVC.swift */,
+				4CD073032403A634007BF693 /* SignupVC.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		4CD495442403DADA003B2398 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				4CD495452403DB06003B2398 /* OtpVC.swift */,
+				4CD495462403DB06003B2398 /* OtpVC.xib */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		64627EF420D70CEB5BEB527B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE5F9DC3028F797FF3FD3600 /* Pods-Spintly_Login.debug.xcconfig */,
+				55386CCBA645381E92D45BEA /* Pods-Spintly_Login.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C46765723F04C3E00471622 /* Spintly_Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C46766C23F04C3F00471622 /* Build configuration list for PBXNativeTarget "Spintly_Login" */;
+			buildPhases = (
+				105BDC515B7B744228F0CB61 /* [CP] Check Pods Manifest.lock */,
+				4C46765423F04C3E00471622 /* Sources */,
+				4C46765523F04C3E00471622 /* Frameworks */,
+				4C46765623F04C3E00471622 /* Resources */,
+				7B4C57BCE8288125EA64C230 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spintly_Login;
+			productName = Spintly_Login;
+			productReference = 4C46765823F04C3E00471622 /* Spintly_Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C46765023F04C3E00471622 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Mrinq;
+				TargetAttributes = {
+					4C46765723F04C3E00471622 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 4C46765323F04C3E00471622 /* Build configuration list for PBXProject "Spintly_Login" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C46764F23F04C3E00471622;
+			productRefGroup = 4C46765923F04C3E00471622 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C46765723F04C3E00471622 /* Spintly_Login */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C46765623F04C3E00471622 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C1677042450586B00D7AC23 /* UserDetailContainerVC.xib in Resources */,
+				4CCF78AF243DF02D0074ECFD /* UserManagementVC.xib in Resources */,
+				4C1DB4E22409383400CF4228 /* PasswordVC.xib in Resources */,
+				4C2DD6C024351414008F3358 /* MainVC.xib in Resources */,
+				4CB903922405AA2900D4F1D4 /* LoginVC.xib in Resources */,
+				4CD073052403A634007BF693 /* SignupVC.xib in Resources */,
+				4C9D8F5424409815001C472B /* AccessHistoryVC.xib in Resources */,
+				4C46766823F04C3F00471622 /* LaunchScreen.storyboard in Resources */,
+				4CC7269A244714E100518248 /* AddUserStep1VC.xib in Resources */,
+				4C2FF5A52449DE300025C9E1 /* AttributeTableViewCell.xib in Resources */,
+				4CC726912446323A00518248 /* HomeVC.xib in Resources */,
+				4CC7269524463FD200518248 /* UserListTableViewCell.xib in Resources */,
+				4C46766523F04C3F00471622 /* Assets.xcassets in Resources */,
+				4C1729C32439109E00D68D29 /* HelpAndSupportVC.xib in Resources */,
+				4C9D8F5E244315FC001C472B /* AccessHistoryTableViewCell.xib in Resources */,
+				4C23869E24497BCC00D83C4B /* GoogleService-Info.plist in Resources */,
+				4C1729CB243AE3FE00D68D29 /* VisitorManagementVC.xib in Resources */,
+				4CC7269F24477DCD00518248 /* AddUserStep2VC.xib in Resources */,
+				4CCF78B3243DF0D90074ECFD /* LeaveManagementVC.xib in Resources */,
+				4CCF78B7243DF0EC0074ECFD /* LeaveVC.xib in Resources */,
+				4CC726A32448837F00518248 /* AddUserStep3VC.xib in Resources */,
+				4C1A8D6A2434A3A200CAD853 /* MainVC1.xib in Resources */,
+				4CCF78C7243E6CFA0074ECFD /* BarrierTableViewCell.xib in Resources */,
+				4CD072FE2402D7CB007BF693 /* ConfirmPasswordVC.xib in Resources */,
+				4C167700245057FD00D7AC23 /* PermissionsVC.xib in Resources */,
+				4C1676FC245057E900D7AC23 /* InformationVC.xib in Resources */,
+				4CD495482403DB06003B2398 /* OtpVC.xib in Resources */,
+				4C1729BA2437627F00D68D29 /* SideMenuListTableViewCell.xib in Resources */,
+				4C1729C72439E62A00D68D29 /* SubMenuViewCell.xib in Resources */,
+				4CD072F12400F444007BF693 /* Login2VC.xib in Resources */,
+				4C6BB16D244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib in Resources */,
+				4CCF78BB243DF1070074ECFD /* SettingsVC.xib in Resources */,
+				4C46767B23F04EBF00471622 /* Password2VC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		105BDC515B7B744228F0CB61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Spintly_Login-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B4C57BCE8288125EA64C230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Spintly_Login/Pods-Spintly_Login-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Spintly_Login/Pods-Spintly_Login-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C46765423F04C3E00471622 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CC72699244714E100518248 /* AddUserStep1VC.swift in Sources */,
+				4CD073042403A634007BF693 /* SignupVC.swift in Sources */,
+				4C1729CA243AE3FE00D68D29 /* VisitorManagementVC.swift in Sources */,
+				4C1676FF245057FD00D7AC23 /* PermissionsVC.swift in Sources */,
+				4C46767E23F054ED00471622 /* Extension.swift in Sources */,
+				4CCF78B2243DF0D90074ECFD /* LeaveManagementVC.swift in Sources */,
+				4CC7269424463FD200518248 /* UserListTableViewCell.swift in Sources */,
+				4C6BB16F244DB67B00CD9140 /* ToolbarPickerView.swift in Sources */,
+				4C6BB16C244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift in Sources */,
+				4C1729C22439109E00D68D29 /* HelpAndSupportVC.swift in Sources */,
+				4CC726A22448837F00518248 /* AddUserStep3VC.swift in Sources */,
+				4C46766023F04C3E00471622 /* ViewController.swift in Sources */,
+				4C1676FB245057E900D7AC23 /* InformationVC.swift in Sources */,
+				4C9D8F5D244315FC001C472B /* AccessHistoryTableViewCell.swift in Sources */,
+				4C1A8D6C2434A56E00CAD853 /* MainVC1.swift in Sources */,
+				4CD072F32400F456007BF693 /* LoginVC.swift in Sources */,
+				4C1729BE24390C3100D68D29 /* HomeVC.swift in Sources */,
+				4C2DD6C2243515FF008F3358 /* MainVC.swift in Sources */,
+				4C2FF5A42449DE300025C9E1 /* AttributeTableViewCell.swift in Sources */,
+				4C1729B92437627F00D68D29 /* SideMenuListTableViewCell.swift in Sources */,
+				4C1729C62439E62A00D68D29 /* SubMenuViewCell.swift in Sources */,
+				4C6A945D240D0D200021BE84 /* CardView.swift in Sources */,
+				4CC7269E24477DCD00518248 /* AddUserStep2VC.swift in Sources */,
+				4CCF78AE243DF02D0074ECFD /* UserManagementVC.swift in Sources */,
+				4CD072FD2402D7CB007BF693 /* ConfirmPasswordVC.swift in Sources */,
+				4CCF78AA243DF0100074ECFD /* AccessHistoryVC.swift in Sources */,
+				4CD495472403DB06003B2398 /* OtpVC.swift in Sources */,
+				4C46765C23F04C3E00471622 /* AppDelegate.swift in Sources */,
+				4CCF78B6243DF0EC0074ECFD /* LeaveVC.swift in Sources */,
+				4C46767A23F04EBF00471622 /* PasswordVC.swift in Sources */,
+				4CCF78BA243DF1070074ECFD /* SettingsVC.swift in Sources */,
+				4C1677032450586B00D7AC23 /* UserDetailContainerVC.swift in Sources */,
+				4CCF78C6243E6CFA0074ECFD /* BarrierTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C46766623F04C3F00471622 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C46766723F04C3F00471622 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C46766A23F04C3F00471622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C46766B23F04C3F00471622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C46766D23F04C3F00471622 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE5F9DC3028F797FF3FD3600 /* Pods-Spintly_Login.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H4278VLU2;
+				INFOPLIST_FILE = Spintly_Login/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrinq.SpintlyKusumPalLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C46766E23F04C3F00471622 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55386CCBA645381E92D45BEA /* Pods-Spintly_Login.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3H4278VLU2;
+				INFOPLIST_FILE = Spintly_Login/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrinq.SpintlyKusumPalLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C46765323F04C3E00471622 /* Build configuration list for PBXProject "Spintly_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C46766A23F04C3F00471622 /* Debug */,
+				4C46766B23F04C3F00471622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C46766C23F04C3F00471622 /* Build configuration list for PBXNativeTarget "Spintly_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C46766D23F04C3F00471622 /* Debug */,
+				4C46766E23F04C3F00471622 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C46765023F04C3E00471622 /* Project object */;
+}

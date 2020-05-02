@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>206128590045-icbepae41u00rbanbs7ni04kosqablbj.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.206128590045-icbepae41u00rbanbs7ni04kosqablbj</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>206128590045-k00mgjb68p7tbfoa5ofj73287cukhc3g.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCYl95BJDxzEdduVpwg_n5YRUu0_dvYLhw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>206128590045</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mrinq.SpintlyKusumPalLogin</string>
+	<key>PROJECT_ID</key>
+	<string>spintly-smart-access</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spintly-smart-access.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:206128590045:ios:d4f5f0bed3c00d12cdbf34</string>
+	<key>DATABASE_URL</key>
+	<string>https://spintly-smart-access.firebaseio.com</string>
+</dict>
+</plist>

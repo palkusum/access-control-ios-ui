@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="Spintly_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="cardView" destination="Z7Z-RT-TcF" id="jVh-q8-1vw"/>
+                <outlet property="phoneTextField" destination="5MS-p6-HAe" id="MGd-xa-sMf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="CqH-AQ-0JI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8G3-tX-kfx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0k-tf-uCh" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Flr-Si-Tmx" userLabel="Top Background View">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="168"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spintly_logo" translatesAutoresizingMaskIntoConstraints="NO" id="WPE-gS-eWx">
+                                            <rect key="frame" x="0.0" y="23" width="320" height="105.5"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.10980392160000001" green="0.43921568630000002" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="WPE-gS-eWx" secondAttribute="trailing" id="JB0-tq-t6u"/>
+                                        <constraint firstItem="WPE-gS-eWx" firstAttribute="centerX" secondItem="Flr-Si-Tmx" secondAttribute="centerX" id="avK-DG-icH"/>
+                                        <constraint firstItem="WPE-gS-eWx" firstAttribute="centerY" secondItem="Flr-Si-Tmx" secondAttribute="centerY" multiplier="0.9" id="cHv-QA-Tjn"/>
+                                        <constraint firstItem="WPE-gS-eWx" firstAttribute="leading" secondItem="Flr-Si-Tmx" secondAttribute="leading" id="xEK-Bd-KWP"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7Z-RT-TcF" userLabel="Card View" customClass="CardView" customModule="Spintly_Login" customModuleProvider="target">
+                                    <rect key="frame" x="32" y="151" width="256" height="96"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-p6-HAe">
+                                            <rect key="frame" x="25.5" y="29" width="205" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="5MS-p6-HAe" firstAttribute="centerX" secondItem="Z7Z-RT-TcF" secondAttribute="centerX" id="P4l-Kp-7K2"/>
+                                        <constraint firstItem="5MS-p6-HAe" firstAttribute="width" secondItem="Z7Z-RT-TcF" secondAttribute="width" multiplier="0.8" id="Ymc-WB-ZkE"/>
+                                        <constraint firstItem="5MS-p6-HAe" firstAttribute="centerY" secondItem="Z7Z-RT-TcF" secondAttribute="centerY" multiplier="0.9" id="mXU-8G-qTS"/>
+                                        <constraint firstItem="5MS-p6-HAe" firstAttribute="height" secondItem="Z7Z-RT-TcF" secondAttribute="height" multiplier="0.3" id="vFL-Cg-qvq"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMk-Ih-AuL">
+                                    <rect key="frame" x="70.5" y="230.5" width="179" height="33.5"/>
+                                    <color key="backgroundColor" red="0.083753854190000004" green="0.2757184728" blue="0.41227791879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <state key="normal" title="NEXT">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="nextButton:" destination="-1" eventType="touchUpInside" id="qnt-49-lgY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="yMk-Ih-AuL" firstAttribute="height" secondItem="Z7Z-RT-TcF" secondAttribute="height" multiplier="0.35" id="9OG-4a-AdF"/>
+                                <constraint firstItem="Z7Z-RT-TcF" firstAttribute="centerX" secondItem="I0k-tf-uCh" secondAttribute="centerX" id="JAh-MO-wXs"/>
+                                <constraint firstItem="Z7Z-RT-TcF" firstAttribute="top" secondItem="Flr-Si-Tmx" secondAttribute="bottom" multiplier="0.9" id="Kvn-Xt-k3E"/>
+                                <constraint firstItem="yMk-Ih-AuL" firstAttribute="centerY" secondItem="Z7Z-RT-TcF" secondAttribute="bottom" id="R4F-3k-Yae"/>
+                                <constraint firstItem="Flr-Si-Tmx" firstAttribute="height" secondItem="I0k-tf-uCh" secondAttribute="height" multiplier="0.35" id="SvT-hi-XnL"/>
+                                <constraint firstItem="yMk-Ih-AuL" firstAttribute="width" secondItem="Z7Z-RT-TcF" secondAttribute="width" multiplier="0.7" id="UUw-hs-fUJ"/>
+                                <constraint firstItem="yMk-Ih-AuL" firstAttribute="centerX" secondItem="Z7Z-RT-TcF" secondAttribute="centerX" id="WiF-J6-bKy"/>
+                                <constraint firstItem="Flr-Si-Tmx" firstAttribute="top" secondItem="I0k-tf-uCh" secondAttribute="top" id="Ynh-GG-fG0"/>
+                                <constraint firstItem="Z7Z-RT-TcF" firstAttribute="width" secondItem="I0k-tf-uCh" secondAttribute="width" multiplier="0.8" id="avV-sf-VW2"/>
+                                <constraint firstItem="Flr-Si-Tmx" firstAttribute="leading" secondItem="I0k-tf-uCh" secondAttribute="leading" id="hMk-Ms-zaY"/>
+                                <constraint firstAttribute="trailing" secondItem="Flr-Si-Tmx" secondAttribute="trailing" id="m4X-eL-DUf"/>
+                                <constraint firstItem="Z7Z-RT-TcF" firstAttribute="height" secondItem="I0k-tf-uCh" secondAttribute="height" multiplier="0.2" id="qqZ-IG-fVo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="I0k-tf-uCh" firstAttribute="leading" secondItem="8G3-tX-kfx" secondAttribute="leading" id="3WM-iX-sJU"/>
+                        <constraint firstAttribute="bottom" secondItem="I0k-tf-uCh" secondAttribute="bottom" id="Fcj-eK-Jrh"/>
+                        <constraint firstItem="I0k-tf-uCh" firstAttribute="top" secondItem="8G3-tX-kfx" secondAttribute="top" id="JBW-2q-Qco"/>
+                        <constraint firstAttribute="trailing" secondItem="I0k-tf-uCh" secondAttribute="trailing" id="l3D-nz-ANG"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WPE-gS-eWx" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.22" id="0I3-bt-ZlO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8G3-tX-kfx" secondAttribute="trailing" id="7gi-Cg-D3U"/>
+                <constraint firstItem="I0k-tf-uCh" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="8ie-mm-bf6"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="8G3-tX-kfx" secondAttribute="bottom" id="ICG-hU-UHl"/>
+                <constraint firstItem="8G3-tX-kfx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XF7-yV-xj3"/>
+                <constraint firstItem="8G3-tX-kfx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hcv-Tw-hGo"/>
+                <constraint firstItem="I0k-tf-uCh" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="tjo-r1-IjB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="134.78260869565219" y="141.84782608695653"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="spintly_logo" width="600" height="424"/>
+    </resources>
+</document>
