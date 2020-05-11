@@ -46,13 +46,16 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//      menuArray(opened: false, name : "Visitor Management", logo : "visitor_management", sectionData: [])
 
         menuList = [menuArray(opened: false, name : "Home", logo : "home", sectionData: []),
                     menuArray(opened: false, name : "Admin Console", logo : "admin_console",
-                              sectionData: ["Access History", "User Management", "Leave Management"]),
-                    menuArray(opened: false, name : "Visitor Management", logo : "visitor_management", sectionData: []),
-                    menuArray(opened: false, name : "User Console", logo : "user_console", sectionData: ["Leave", "Settings"]),
-                    menuArray(opened: false, name : "Help & Support", logo : "help", sectionData: [])]
+                              sectionData: ["Access History", "User Management"]),
+                    menuArray(opened: false, name : "User Console", logo : "user_console", sectionData: ["Access History", "Settings"]),
+                    menuArray(opened: false, name : "Help & Support", logo : "help", sectionData: []),
+                    menuArray(opened: false, name : "About", logo : "about", sectionData: []),
+                    menuArray(opened: false, name : "Logout", logo : "logout", sectionData: [])]
         
         organisationList = [organisationArray(logo: "company_placeholder", name: "Mrinq Technologies"),
                             organisationArray(logo: "company_placeholder", name: "QA Test1"),
@@ -140,7 +143,40 @@ class MainVC: UIViewController {
     }
 
     @objc func moreButtonAction() {
-        print("more action clicked")
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+
+            alert.addAction(UIAlertAction(title: "About", style: .default, handler: { _ in
+                self.showAppVersionAlert()
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Logout", style: .default, handler: { _ in
+                self.showSignOutAlert()
+            }))
+            
+            alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showSignOutAlert() {
+        let alert = UIAlertController(title: "Sign out?", message: "Are you sure you want to Sign Out?",   preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertAction.Style.default, handler: { _ in
+            //Cancel Action
+        }))
+        alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+            //Sign out action
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showAppVersionAlert() {
+        let alert = UIAlertController(title: "App Version", message: "1.0",   preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: { _ in
+            //Cancel Action
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
@@ -194,7 +230,15 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource {
         } else {
                 return 37
             }
-        }
+    }
+    
+    
+//    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        let footerView = Bundle.main.loadNibNamed("SideNavFooterView", owner: self, options: nil)?.first as! UIView
+//        return footerView
+//
+//    }
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if switch_organisation {
@@ -246,8 +290,8 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource {
                     
                 } else {
                     switch  menuList[indexPath.section].sectionData[indexPath.row - 1] {
-                    case "Leave":
-                        addChildController(LeaveVC())
+                    case "Access History":
+                        addChildController(UserAccessHistoryVC())
                     case "Settings":
                         addChildController(SettingsVC())
                     default:
@@ -256,6 +300,12 @@ extension MainVC : UITableViewDelegate, UITableViewDataSource {
                 }
             case "Help & Support":
                 addChildController(HelpAndSupportVC())
+            case "About":
+                toggleDrawer()
+                self.showAppVersionAlert()
+            case "Logout":
+                toggleDrawer()
+                self.showSignOutAlert()
             default:
                 break
             }

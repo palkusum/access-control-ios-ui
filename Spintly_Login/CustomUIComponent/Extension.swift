@@ -28,17 +28,17 @@ extension UITextField {
         layer.shadowOpacity = 0.1
     }
     
-    func underLineTextField() {
+    func underLineTextField(_ color: UIColor) {
         let border = CALayer()
         let width = CGFloat(1.0)
-        border.borderColor = UIColor.lightGray.cgColor
+        border.borderColor = color.cgColor
         border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: self.frame.size.height)
         border.borderWidth = width
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
     }
     
-    func textFieldIcon(_ viewMode: ViewMode, _ image: String) {
+    func textFieldIcon(_ viewMode: String , _ image: String) {
         
         let imageUIView = UIView(frame: CGRect(x: 0, y: 0, width: 50, height:24))
         let imageView = UIImageView(image: UIImage(named: image))
@@ -46,7 +46,7 @@ extension UITextField {
         imageView.contentMode = .scaleAspectFit
         imageUIView.addSubview(imageView)
         
-        if (viewMode == rightViewMode) {
+        if (viewMode == "rightView") {
             self.rightView = imageUIView
             self.rightViewMode = .always
         } else {
@@ -55,4 +55,27 @@ extension UITextField {
         }
     }
 
+}
+
+extension UITextView {
+    
+    func underLineTextView(_ color: UIColor) {
+        let border = CALayer()
+        let width = CGFloat(1.0)
+        border.borderColor = color.cgColor
+        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: self.frame.size.height)
+        border.borderWidth = width
+        self.layer.addSublayer(border)
+        self.layer.masksToBounds = true
+    }
+}
+
+
+extension UIButton {
+    func borderButton(_ color: UIColor) {
+        layer.borderWidth = 1
+        layer.borderColor = color.cgColor
+        layer.cornerRadius = 4
+        contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
+    }
 }

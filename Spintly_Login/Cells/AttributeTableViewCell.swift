@@ -11,7 +11,10 @@ import UIKit
 class AttributeTableViewCell: UITableViewCell {
 
 
+    @IBOutlet var placeholder: UILabel!
     @IBOutlet var attributeField: UITextField!
+    
+    @IBOutlet var attributeFieldPlaceholderLabel: UILabel!
     
     func attributeFieldIconSetUp() {
         attributeField.textFieldStyle()

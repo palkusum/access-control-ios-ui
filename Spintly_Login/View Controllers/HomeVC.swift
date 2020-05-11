@@ -11,10 +11,13 @@ import UIKit
 class HomeVC: UIViewController {
 
     @IBOutlet var barrierTableView: UITableView!
+    @IBOutlet var notFoundLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
          barrierTableViewSetUp()
+        
+        notFoundLabel.isHidden = true
     }
     
     override func viewDidLayoutSubviews() {
@@ -35,13 +38,31 @@ extension HomeVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = Bundle.main.loadNibNamed("BarrierTableViewCell", owner: self, options: nil)?.first as! BarrierTableViewCell
+//        Normal Barrier
+//        let cell = Bundle.main.loadNibNamed("BarrierTableViewCell", owner: self, options: nil)?.first as! BarrierTableViewCell
+
+        
+//        Single Unit Barrier
+         let cell = Bundle.main.loadNibNamed("SingleUnitBarrierTableViewCell", owner: self, options: nil)?.first as! SingleUnitBarrierTableViewCell
+        
+//        Checked-out Status
+//        cell.checkinCheckoutButton.setTitle("Check-in", for: .normal)
+//        cell.checkinCheckoutButton.setTitleColor(.green, for: .normal)
+//        cell.checkinCheckoutButton.borderButton(.green)
+//        cell.statusLabel.text = "Checked-out"
+        
+//        Checked-in Status
+        cell.checkinCheckoutButton.setTitle("Check-out", for: .normal)
+        cell.checkinCheckoutButton.setTitleColor(.red, for: .normal)
+        cell.checkinCheckoutButton.borderButton(.red)
+        cell.statusLabel.text = "Checked-in"
+        
         cell.selectionStyle = .none
-         return cell
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 120
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

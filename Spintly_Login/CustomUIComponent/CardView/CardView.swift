@@ -14,7 +14,7 @@ import UIKit
     @IBInspectable var shadowOffsetWidth : CGFloat = 0
     @IBInspectable var shadowOffsetHeight : CGFloat = 0
     @IBInspectable var shadowColor : UIColor? = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    @IBInspectable var shadowOpacity : Float = 0.2
+    @IBInspectable var shadowOpacity : Float = 0.15
         
     override func layoutSubviews() {
         layer.cornerRadius = cornerRadius

@@ -11,8 +11,6 @@
 		4C1676FC245057E900D7AC23 /* InformationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1676FA245057E900D7AC23 /* InformationVC.xib */; };
 		4C1676FF245057FD00D7AC23 /* PermissionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1676FD245057FD00D7AC23 /* PermissionsVC.swift */; };
 		4C167700245057FD00D7AC23 /* PermissionsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1676FE245057FD00D7AC23 /* PermissionsVC.xib */; };
-		4C1677032450586B00D7AC23 /* UserDetailContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1677012450586B00D7AC23 /* UserDetailContainerVC.swift */; };
-		4C1677042450586B00D7AC23 /* UserDetailContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1677022450586B00D7AC23 /* UserDetailContainerVC.xib */; };
 		4C1729B92437627F00D68D29 /* SideMenuListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729B72437627F00D68D29 /* SideMenuListTableViewCell.swift */; };
 		4C1729BA2437627F00D68D29 /* SideMenuListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1729B82437627F00D68D29 /* SideMenuListTableViewCell.xib */; };
 		4C1729BE24390C3100D68D29 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1729BC24390C3100D68D29 /* HomeVC.swift */; };
@@ -24,12 +22,26 @@
 		4C1729CB243AE3FE00D68D29 /* VisitorManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1729C9243AE3FE00D68D29 /* VisitorManagementVC.xib */; };
 		4C1A8D6A2434A3A200CAD853 /* MainVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1A8D692434A3A200CAD853 /* MainVC1.xib */; };
 		4C1A8D6C2434A56E00CAD853 /* MainVC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1A8D6B2434A56E00CAD853 /* MainVC1.swift */; };
+		4C1B620124657113004F4E16 /* UserAccessHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B61FF24657113004F4E16 /* UserAccessHistoryVC.swift */; };
+		4C1B620224657113004F4E16 /* UserAccessHistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1B620024657113004F4E16 /* UserAccessHistoryVC.xib */; };
 		4C1DB4E22409383400CF4228 /* PasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C1DB4E12409383400CF4228 /* PasswordVC.xib */; };
+		4C22E7DA24680E8E00F6A28C /* SingleUnitBarrierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C22E7D824680E8E00F6A28C /* SingleUnitBarrierTableViewCell.swift */; };
+		4C22E7DB24680E8E00F6A28C /* SingleUnitBarrierTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C22E7D924680E8E00F6A28C /* SingleUnitBarrierTableViewCell.xib */; };
+		4C22E7DE2468219A00F6A28C /* UserBarrierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C22E7DC2468219A00F6A28C /* UserBarrierTableViewCell.swift */; };
+		4C22E7DF2468219A00F6A28C /* UserBarrierTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C22E7DD2468219A00F6A28C /* UserBarrierTableViewCell.xib */; };
 		4C23869E24497BCC00D83C4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C23869D24497BCC00D83C4B /* GoogleService-Info.plist */; };
 		4C2DD6C024351414008F3358 /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2DD6BF24351414008F3358 /* MainVC.xib */; };
 		4C2DD6C2243515FF008F3358 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2DD6C1243515FF008F3358 /* MainVC.swift */; };
 		4C2FF5A42449DE300025C9E1 /* AttributeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF5A22449DE300025C9E1 /* AttributeTableViewCell.swift */; };
 		4C2FF5A52449DE300025C9E1 /* AttributeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FF5A32449DE300025C9E1 /* AttributeTableViewCell.xib */; };
+		4C4046AC24616C4200E920DE /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4046AA24616C4200E920DE /* UserDetailTableViewCell.swift */; };
+		4C4046AD24616C4200E920DE /* UserDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4046AB24616C4200E920DE /* UserDetailTableViewCell.xib */; };
+		4C4046B024617EC300E920DE /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4046AE24617EC300E920DE /* HistoryVC.swift */; };
+		4C4046B124617EC300E920DE /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4046AF24617EC300E920DE /* HistoryVC.xib */; };
+		4C4046B42461A5F700E920DE /* PermissionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4046B22461A5F700E920DE /* PermissionsTableViewCell.swift */; };
+		4C4046B52461A5F700E920DE /* PermissionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4046B32461A5F700E920DE /* PermissionsTableViewCell.xib */; };
+		4C4046B82461BA5100E920DE /* UserDetailHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4046B62461BA5100E920DE /* UserDetailHistoryTableViewCell.swift */; };
+		4C4046B92461BA5100E920DE /* UserDetailHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4046B72461BA5100E920DE /* UserDetailHistoryTableViewCell.xib */; };
 		4C46765C23F04C3E00471622 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46765B23F04C3E00471622 /* AppDelegate.swift */; };
 		4C46766023F04C3E00471622 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46765F23F04C3E00471622 /* ViewController.swift */; };
 		4C46766523F04C3F00471622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C46766423F04C3F00471622 /* Assets.xcassets */; };
@@ -37,6 +49,8 @@
 		4C46767A23F04EBF00471622 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46767823F04EBF00471622 /* PasswordVC.swift */; };
 		4C46767B23F04EBF00471622 /* Password2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46767923F04EBF00471622 /* Password2VC.xib */; };
 		4C46767E23F054ED00471622 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46767D23F054ED00471622 /* Extension.swift */; };
+		4C57C326245ECED8007C778F /* UserDetailContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C57C324245ECED8007C778F /* UserDetailContainerVC.swift */; };
+		4C57C327245ECED8007C778F /* UserDetailContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C57C325245ECED8007C778F /* UserDetailContainerVC.xib */; };
 		4C6A945D240D0D200021BE84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6A945C240D0D200021BE84 /* CardView.swift */; };
 		4C6BB16C244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */; };
 		4C6BB16D244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */; };
@@ -82,8 +96,6 @@
 		4C1676FA245057E900D7AC23 /* InformationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationVC.xib; sourceTree = "<group>"; };
 		4C1676FD245057FD00D7AC23 /* PermissionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsVC.swift; sourceTree = "<group>"; };
 		4C1676FE245057FD00D7AC23 /* PermissionsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsVC.xib; sourceTree = "<group>"; };
-		4C1677012450586B00D7AC23 /* UserDetailContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailContainerVC.swift; sourceTree = "<group>"; };
-		4C1677022450586B00D7AC23 /* UserDetailContainerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailContainerVC.xib; sourceTree = "<group>"; };
 		4C1729B72437627F00D68D29 /* SideMenuListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuListTableViewCell.swift; sourceTree = "<group>"; };
 		4C1729B82437627F00D68D29 /* SideMenuListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuListTableViewCell.xib; sourceTree = "<group>"; };
 		4C1729BC24390C3100D68D29 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -95,12 +107,26 @@
 		4C1729C9243AE3FE00D68D29 /* VisitorManagementVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VisitorManagementVC.xib; sourceTree = "<group>"; };
 		4C1A8D692434A3A200CAD853 /* MainVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC1.xib; sourceTree = "<group>"; };
 		4C1A8D6B2434A56E00CAD853 /* MainVC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC1.swift; sourceTree = "<group>"; };
+		4C1B61FF24657113004F4E16 /* UserAccessHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccessHistoryVC.swift; sourceTree = "<group>"; };
+		4C1B620024657113004F4E16 /* UserAccessHistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAccessHistoryVC.xib; sourceTree = "<group>"; };
 		4C1DB4E12409383400CF4228 /* PasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordVC.xib; sourceTree = "<group>"; };
+		4C22E7D824680E8E00F6A28C /* SingleUnitBarrierTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUnitBarrierTableViewCell.swift; sourceTree = "<group>"; };
+		4C22E7D924680E8E00F6A28C /* SingleUnitBarrierTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleUnitBarrierTableViewCell.xib; sourceTree = "<group>"; };
+		4C22E7DC2468219A00F6A28C /* UserBarrierTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserBarrierTableViewCell.swift; sourceTree = "<group>"; };
+		4C22E7DD2468219A00F6A28C /* UserBarrierTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserBarrierTableViewCell.xib; sourceTree = "<group>"; };
 		4C23869D24497BCC00D83C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4C2DD6BF24351414008F3358 /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
 		4C2DD6C1243515FF008F3358 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		4C2FF5A22449DE300025C9E1 /* AttributeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeTableViewCell.swift; sourceTree = "<group>"; };
 		4C2FF5A32449DE300025C9E1 /* AttributeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeTableViewCell.xib; sourceTree = "<group>"; };
+		4C4046AA24616C4200E920DE /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		4C4046AB24616C4200E920DE /* UserDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailTableViewCell.xib; sourceTree = "<group>"; };
+		4C4046AE24617EC300E920DE /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		4C4046AF24617EC300E920DE /* HistoryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
+		4C4046B22461A5F700E920DE /* PermissionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsTableViewCell.swift; sourceTree = "<group>"; };
+		4C4046B32461A5F700E920DE /* PermissionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PermissionsTableViewCell.xib; sourceTree = "<group>"; };
+		4C4046B62461BA5100E920DE /* UserDetailHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		4C4046B72461BA5100E920DE /* UserDetailHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailHistoryTableViewCell.xib; sourceTree = "<group>"; };
 		4C46765823F04C3E00471622 /* Spintly_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spintly_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C46765B23F04C3E00471622 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C46765F23F04C3E00471622 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +136,8 @@
 		4C46767823F04EBF00471622 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
 		4C46767923F04EBF00471622 /* Password2VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Password2VC.xib; sourceTree = "<group>"; };
 		4C46767D23F054ED00471622 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4C57C324245ECED8007C778F /* UserDetailContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailContainerVC.swift; sourceTree = "<group>"; };
+		4C57C325245ECED8007C778F /* UserDetailContainerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDetailContainerVC.xib; sourceTree = "<group>"; };
 		4C6A945C240D0D200021BE84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccessBarriersTableViewCell.swift; sourceTree = "<group>"; };
 		4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccessBarriersTableViewCell.xib; sourceTree = "<group>"; };
@@ -173,12 +201,14 @@
 		4C1676F82450577C00D7AC23 /* User Detail */ = {
 			isa = PBXGroup;
 			children = (
-				4C1677012450586B00D7AC23 /* UserDetailContainerVC.swift */,
-				4C1677022450586B00D7AC23 /* UserDetailContainerVC.xib */,
+				4C57C324245ECED8007C778F /* UserDetailContainerVC.swift */,
+				4C57C325245ECED8007C778F /* UserDetailContainerVC.xib */,
 				4C1676F9245057E900D7AC23 /* InformationVC.swift */,
 				4C1676FA245057E900D7AC23 /* InformationVC.xib */,
 				4C1676FD245057FD00D7AC23 /* PermissionsVC.swift */,
 				4C1676FE245057FD00D7AC23 /* PermissionsVC.xib */,
+				4C4046AE24617EC300E920DE /* HistoryVC.swift */,
+				4C4046AF24617EC300E920DE /* HistoryVC.xib */,
 			);
 			path = "User Detail";
 			sourceTree = "<group>";
@@ -200,6 +230,16 @@
 				4C2FF5A32449DE300025C9E1 /* AttributeTableViewCell.xib */,
 				4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */,
 				4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */,
+				4C4046AA24616C4200E920DE /* UserDetailTableViewCell.swift */,
+				4C4046AB24616C4200E920DE /* UserDetailTableViewCell.xib */,
+				4C4046B22461A5F700E920DE /* PermissionsTableViewCell.swift */,
+				4C4046B32461A5F700E920DE /* PermissionsTableViewCell.xib */,
+				4C4046B62461BA5100E920DE /* UserDetailHistoryTableViewCell.swift */,
+				4C4046B72461BA5100E920DE /* UserDetailHistoryTableViewCell.xib */,
+				4C22E7D824680E8E00F6A28C /* SingleUnitBarrierTableViewCell.swift */,
+				4C22E7D924680E8E00F6A28C /* SingleUnitBarrierTableViewCell.xib */,
+				4C22E7DC2468219A00F6A28C /* UserBarrierTableViewCell.swift */,
+				4C22E7DD2468219A00F6A28C /* UserBarrierTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -209,23 +249,41 @@
 			children = (
 				4C1729BC24390C3100D68D29 /* HomeVC.swift */,
 				4CC726902446323A00518248 /* HomeVC.xib */,
-				4CCF78A8243DF0100074ECFD /* AccessHistoryVC.swift */,
-				4C9D8F5324409815001C472B /* AccessHistoryVC.xib */,
-				4CC726962447144D00518248 /* User Management */,
-				4CCF78B0243DF0D90074ECFD /* LeaveManagementVC.swift */,
-				4CCF78B1243DF0D90074ECFD /* LeaveManagementVC.xib */,
+				4C1B61FD24657081004F4E16 /* Admin Console */,
+				4C1B61FE246570A6004F4E16 /* User Console */,
 				4C1729C8243AE3FE00D68D29 /* VisitorManagementVC.swift */,
 				4C1729C9243AE3FE00D68D29 /* VisitorManagementVC.xib */,
-				4CCF78B4243DF0EC0074ECFD /* LeaveVC.swift */,
-				4CCF78B5243DF0EC0074ECFD /* LeaveVC.xib */,
-				4CCF78B8243DF1070074ECFD /* SettingsVC.swift */,
-				4CCF78B9243DF1070074ECFD /* SettingsVC.xib */,
 				4C1729C02439109E00D68D29 /* HelpAndSupportVC.swift */,
 				4C1729C12439109E00D68D29 /* HelpAndSupportVC.xib */,
 				4C2DD6C1243515FF008F3358 /* MainVC.swift */,
 				4C2DD6BF24351414008F3358 /* MainVC.xib */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4C1B61FD24657081004F4E16 /* Admin Console */ = {
+			isa = PBXGroup;
+			children = (
+				4CCF78A8243DF0100074ECFD /* AccessHistoryVC.swift */,
+				4C9D8F5324409815001C472B /* AccessHistoryVC.xib */,
+				4CCF78B0243DF0D90074ECFD /* LeaveManagementVC.swift */,
+				4CCF78B1243DF0D90074ECFD /* LeaveManagementVC.xib */,
+				4CC726962447144D00518248 /* User Management */,
+			);
+			path = "Admin Console";
+			sourceTree = "<group>";
+		};
+		4C1B61FE246570A6004F4E16 /* User Console */ = {
+			isa = PBXGroup;
+			children = (
+				4C1B61FF24657113004F4E16 /* UserAccessHistoryVC.swift */,
+				4C1B620024657113004F4E16 /* UserAccessHistoryVC.xib */,
+				4CCF78B8243DF1070074ECFD /* SettingsVC.swift */,
+				4CCF78B9243DF1070074ECFD /* SettingsVC.xib */,
+				4CCF78B4243DF0EC0074ECFD /* LeaveVC.swift */,
+				4CCF78B5243DF0EC0074ECFD /* LeaveVC.xib */,
+			);
+			path = "User Console";
 			sourceTree = "<group>";
 		};
 		4C46764F23F04C3E00471622 = {
@@ -251,9 +309,9 @@
 			children = (
 				4C1729BB24390BF600D68D29 /* View Controllers */,
 				4C1729B2243754C500D68D29 /* Cells */,
-				4C9710D3241B997100E3EADF /* Main */,
 				4C46767C23F054A600471622 /* CustomUIComponent */,
 				4C46766F23F04E3100471622 /* Login */,
+				4C9710D3241B997100E3EADF /* Main */,
 				4C46765B23F04C3E00471622 /* AppDelegate.swift */,
 				4C46765F23F04C3E00471622 /* ViewController.swift */,
 				4C46766423F04C3F00471622 /* Assets.xcassets */,
@@ -443,12 +501,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C1677042450586B00D7AC23 /* UserDetailContainerVC.xib in Resources */,
+				4C57C327245ECED8007C778F /* UserDetailContainerVC.xib in Resources */,
 				4CCF78AF243DF02D0074ECFD /* UserManagementVC.xib in Resources */,
+				4C1B620224657113004F4E16 /* UserAccessHistoryVC.xib in Resources */,
 				4C1DB4E22409383400CF4228 /* PasswordVC.xib in Resources */,
 				4C2DD6C024351414008F3358 /* MainVC.xib in Resources */,
+				4C22E7DB24680E8E00F6A28C /* SingleUnitBarrierTableViewCell.xib in Resources */,
 				4CB903922405AA2900D4F1D4 /* LoginVC.xib in Resources */,
 				4CD073052403A634007BF693 /* SignupVC.xib in Resources */,
+				4C4046B92461BA5100E920DE /* UserDetailHistoryTableViewCell.xib in Resources */,
 				4C9D8F5424409815001C472B /* AccessHistoryVC.xib in Resources */,
 				4C46766823F04C3F00471622 /* LaunchScreen.storyboard in Resources */,
 				4CC7269A244714E100518248 /* AddUserStep1VC.xib in Resources */,
@@ -460,14 +521,17 @@
 				4C9D8F5E244315FC001C472B /* AccessHistoryTableViewCell.xib in Resources */,
 				4C23869E24497BCC00D83C4B /* GoogleService-Info.plist in Resources */,
 				4C1729CB243AE3FE00D68D29 /* VisitorManagementVC.xib in Resources */,
+				4C4046B124617EC300E920DE /* HistoryVC.xib in Resources */,
 				4CC7269F24477DCD00518248 /* AddUserStep2VC.xib in Resources */,
 				4CCF78B3243DF0D90074ECFD /* LeaveManagementVC.xib in Resources */,
+				4C4046B52461A5F700E920DE /* PermissionsTableViewCell.xib in Resources */,
 				4CCF78B7243DF0EC0074ECFD /* LeaveVC.xib in Resources */,
 				4CC726A32448837F00518248 /* AddUserStep3VC.xib in Resources */,
 				4C1A8D6A2434A3A200CAD853 /* MainVC1.xib in Resources */,
 				4CCF78C7243E6CFA0074ECFD /* BarrierTableViewCell.xib in Resources */,
 				4CD072FE2402D7CB007BF693 /* ConfirmPasswordVC.xib in Resources */,
 				4C167700245057FD00D7AC23 /* PermissionsVC.xib in Resources */,
+				4C22E7DF2468219A00F6A28C /* UserBarrierTableViewCell.xib in Resources */,
 				4C1676FC245057E900D7AC23 /* InformationVC.xib in Resources */,
 				4CD495482403DB06003B2398 /* OtpVC.xib in Resources */,
 				4C1729BA2437627F00D68D29 /* SideMenuListTableViewCell.xib in Resources */,
@@ -476,6 +540,7 @@
 				4C6BB16D244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib in Resources */,
 				4CCF78BB243DF1070074ECFD /* SettingsVC.xib in Resources */,
 				4C46767B23F04EBF00471622 /* Password2VC.xib in Resources */,
+				4C4046AD24616C4200E920DE /* UserDetailTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,8 +602,11 @@
 			files = (
 				4CC72699244714E100518248 /* AddUserStep1VC.swift in Sources */,
 				4CD073042403A634007BF693 /* SignupVC.swift in Sources */,
+				4C4046B82461BA5100E920DE /* UserDetailHistoryTableViewCell.swift in Sources */,
 				4C1729CA243AE3FE00D68D29 /* VisitorManagementVC.swift in Sources */,
+				4C1B620124657113004F4E16 /* UserAccessHistoryVC.swift in Sources */,
 				4C1676FF245057FD00D7AC23 /* PermissionsVC.swift in Sources */,
+				4C4046B42461A5F700E920DE /* PermissionsTableViewCell.swift in Sources */,
 				4C46767E23F054ED00471622 /* Extension.swift in Sources */,
 				4CCF78B2243DF0D90074ECFD /* LeaveManagementVC.swift in Sources */,
 				4CC7269424463FD200518248 /* UserListTableViewCell.swift in Sources */,
@@ -548,6 +616,7 @@
 				4CC726A22448837F00518248 /* AddUserStep3VC.swift in Sources */,
 				4C46766023F04C3E00471622 /* ViewController.swift in Sources */,
 				4C1676FB245057E900D7AC23 /* InformationVC.swift in Sources */,
+				4C4046AC24616C4200E920DE /* UserDetailTableViewCell.swift in Sources */,
 				4C9D8F5D244315FC001C472B /* AccessHistoryTableViewCell.swift in Sources */,
 				4C1A8D6C2434A56E00CAD853 /* MainVC1.swift in Sources */,
 				4CD072F32400F456007BF693 /* LoginVC.swift in Sources */,
@@ -555,8 +624,11 @@
 				4C2DD6C2243515FF008F3358 /* MainVC.swift in Sources */,
 				4C2FF5A42449DE300025C9E1 /* AttributeTableViewCell.swift in Sources */,
 				4C1729B92437627F00D68D29 /* SideMenuListTableViewCell.swift in Sources */,
+				4C4046B024617EC300E920DE /* HistoryVC.swift in Sources */,
 				4C1729C62439E62A00D68D29 /* SubMenuViewCell.swift in Sources */,
+				4C22E7DE2468219A00F6A28C /* UserBarrierTableViewCell.swift in Sources */,
 				4C6A945D240D0D200021BE84 /* CardView.swift in Sources */,
+				4C22E7DA24680E8E00F6A28C /* SingleUnitBarrierTableViewCell.swift in Sources */,
 				4CC7269E24477DCD00518248 /* AddUserStep2VC.swift in Sources */,
 				4CCF78AE243DF02D0074ECFD /* UserManagementVC.swift in Sources */,
 				4CD072FD2402D7CB007BF693 /* ConfirmPasswordVC.swift in Sources */,
@@ -566,7 +638,7 @@
 				4CCF78B6243DF0EC0074ECFD /* LeaveVC.swift in Sources */,
 				4C46767A23F04EBF00471622 /* PasswordVC.swift in Sources */,
 				4CCF78BA243DF1070074ECFD /* SettingsVC.swift in Sources */,
-				4C1677032450586B00D7AC23 /* UserDetailContainerVC.swift in Sources */,
+				4C57C326245ECED8007C778F /* UserDetailContainerVC.swift in Sources */,
 				4CCF78C6243E6CFA0074ECFD /* BarrierTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

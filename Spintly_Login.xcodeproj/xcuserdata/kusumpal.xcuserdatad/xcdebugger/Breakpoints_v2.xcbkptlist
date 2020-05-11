@@ -78,8 +78,8 @@
             filePath = "Spintly_Login/View Controllers/HomeVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "barrierTableViewSetUp()"
             landmarkType = "7">
          </BreakpointContent>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserDetailContainerVC" customModule="Spintly_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="adminLabel" destination="551-at-jpS" id="7ha-xh-S6f"/>
+                <outlet property="adminManagerLabel" destination="xod-R1-iAC" id="Ufa-Ds-blb"/>
+                <outlet property="listTableView" destination="htI-BT-7Sm" id="lKO-rr-Ps7"/>
+                <outlet property="listTableViewHeightConstraint" destination="rKe-Aa-jWO" id="p8a-db-tlz"/>
+                <outlet property="usernameLabel" destination="Y9m-ww-cSv" id="jNd-q0-v50"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="yHg-Vd-No8">
+                    <rect key="frame" x="172" y="84" width="70" height="70"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="584-oo-D8a"/>
+                        <constraint firstAttribute="height" constant="70" id="ND2-21-HFP"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uN6-op-SpO">
+                    <rect key="frame" x="119.5" y="174" width="175" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sneha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9m-ww-cSv">
+                            <rect key="frame" x="61.5" y="0.0" width="52" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.15594393849999999" green="0.14976562860000001" blue="0.56559042820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Administrator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="551-at-jpS">
+                            <rect key="frame" x="36" y="26.5" width="103" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Administrator/Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xod-R1-iAC">
+                            <rect key="frame" x="0.0" y="52" width="175" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.54281674999999996" green="0.54281674999999996" blue="0.54281674999999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="htI-BT-7Sm">
+                    <rect key="frame" x="0.0" y="286.5" width="414" height="30"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="rKe-Aa-jWO"/>
+                    </constraints>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uN6-op-SpO" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="E7g-b8-5iN"/>
+                <constraint firstItem="yHg-Vd-No8" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="GHp-MW-mEI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="htI-BT-7Sm" secondAttribute="trailing" id="bqo-Uh-dPF"/>
+                <constraint firstItem="htI-BT-7Sm" firstAttribute="top" secondItem="uN6-op-SpO" secondAttribute="bottom" constant="40" id="g0A-4h-ksb"/>
+                <constraint firstItem="yHg-Vd-No8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="rbH-WW-cLk"/>
+                <constraint firstItem="uN6-op-SpO" firstAttribute="top" secondItem="yHg-Vd-No8" secondAttribute="bottom" constant="20" id="t6j-L2-UP0"/>
+                <constraint firstItem="htI-BT-7Sm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="uT0-KF-wrP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="537.68115942028987" y="88.392857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="company_placeholder" width="33" height="33"/>
+    </resources>
+</document>
