@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         let mainVc = MainVC()
         let nav = UINavigationController(rootViewController: mainVc)
+        let navigationBarAppearace = UINavigationBar.appearance()
+        navigationBarAppearace.tintColor = .white
+        navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        navigationBarAppearace.barTintColor = UIColor.primaryColor()
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         FirebaseApp.configure()

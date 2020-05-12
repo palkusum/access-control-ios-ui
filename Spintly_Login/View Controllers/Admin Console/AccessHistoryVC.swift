@@ -145,6 +145,9 @@ extension AccessHistoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("AccessHistoryTableViewCell", owner: self, options: nil)?.first as! AccessHistoryTableViewCell
         
+                cell.directionLabel.textColor = UIColor.greenColor()
+        //        cell.directionLabel.textColor = UIColor.redColor()
+        
         return cell
     }
     

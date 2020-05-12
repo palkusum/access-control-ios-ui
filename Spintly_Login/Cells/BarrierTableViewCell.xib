@@ -39,13 +39,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4X-5a-flh">
                                 <rect key="frame" x="0.0" y="0.0" width="248" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <color key="textColor" red="0.15594393849999999" green="0.14976562860000001" blue="0.56559042820000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.19215686274509802" green="0.20392156862745098" blue="0.45882352941176469" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apartment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iK6-gR-A5M">
                                 <rect key="frame" x="0.0" y="20.5" width="248" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.42352941176470588" green="0.47450980392156861" blue="0.49803921568627452" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -66,6 +66,10 @@
                 <constraint firstItem="njF-e1-oar" firstAttribute="trailing" secondItem="4Rb-DC-p7q" secondAttribute="trailing" constant="20" id="2T8-9v-E6D"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="barrierNameLabel" destination="t4X-5a-flh" id="OaL-jZ-gkT"/>
+                <outlet property="locationLabel" destination="iK6-gR-A5M" id="T7l-as-ViS"/>
+            </connections>
             <point key="canvasLocation" x="176.08695652173915" y="89.0625"/>
         </tableViewCell>
     </objects>

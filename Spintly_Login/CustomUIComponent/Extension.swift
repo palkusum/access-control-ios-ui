@@ -79,3 +79,56 @@ extension UIButton {
         contentEdgeInsets = UIEdgeInsets(top: 8, left: 12, bottom: 8, right: 12)
     }
 }
+
+extension UINavigationController {
+
+    func setStatusBar() {
+        let statusBarFrame: CGRect
+        if #available(iOS 13.0, *) {
+            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
+        } else {
+            statusBarFrame = UIApplication.shared.statusBarFrame
+        }
+        let statusBarView = UIView(frame: statusBarFrame)
+        statusBarView.backgroundColor = #colorLiteral(red: 0.1921568627, green: 0.262745098, blue: 0.4588235294, alpha: 1)
+        view.addSubview(statusBarView)
+    }
+
+}
+
+extension UIColor {
+    
+//   class func appThemeBlueColor() -> UIColor {
+//        return UIColor (red: 28/255.0, green: 112/255.0, blue: 159/255.0, alpha: 1.0)
+//    }
+    
+    class func redColor() -> UIColor {
+        return UIColor (red: 244/255.0, green: 67/255.0, blue: 54/255.0, alpha: 1.0)
+    }
+    
+    class func greenColor() -> UIColor {
+        return UIColor (red: 76/255.0, green: 175/255.0, blue: 80/255.0, alpha: 1.0)
+    }
+    
+    class func orangeColor() -> UIColor {
+        return UIColor (red: 239/255.0, green: 106/255.0, blue: 0/255.0, alpha: 1.0)
+    }
+    
+    class func greyColor() -> UIColor {
+        return UIColor (red: 108/255.0, green: 121/255.0, blue: 127/255.0, alpha: 1.0)
+    }
+    
+    class func darkBlueColor() -> UIColor {
+        return UIColor (red: 0/255.0, green: 46/255.0, blue: 72/255.0, alpha: 1.0)
+    }
+    
+    class func primaryColor() -> UIColor {
+        return UIColor (red: 28/255.0, green: 112/255.0, blue: 159/255.0, alpha: 1.0)
+    }
+    
+    class func primaryDarkColor() -> UIColor {
+        return UIColor (red: 49/255.0, green: 67/255.0, blue: 117/255.0, alpha: 1.0)
+    }
+    
+    
+}

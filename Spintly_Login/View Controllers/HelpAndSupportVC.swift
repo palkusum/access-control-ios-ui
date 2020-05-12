@@ -36,7 +36,7 @@ class HelpAndSupportVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
         if messageTextView.textColor == UIColor.lightGray {
             messageTextView.text = nil
             messageTextView.textColor = UIColor.black
-            messageTextView.underLineTextView(UIColor.orange)
+            messageTextView.underLineTextView(UIColor.orangeColor())
         }
     }
     
@@ -49,7 +49,7 @@ class HelpAndSupportVC: UIViewController, UITextViewDelegate, UITextFieldDelegat
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        subjectTextField.underLineTextField(UIColor.orange)
+        subjectTextField.underLineTextField(UIColor.orangeColor())
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {

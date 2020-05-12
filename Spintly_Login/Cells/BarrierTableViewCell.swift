@@ -10,5 +10,8 @@ import UIKit
 
 class BarrierTableViewCell: UITableViewCell {
 
+    @IBOutlet var barrierNameLabel: UILabel!
+    
+    @IBOutlet var locationLabel: UILabel!
     
 }

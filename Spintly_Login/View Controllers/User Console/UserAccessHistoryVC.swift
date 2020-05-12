@@ -43,6 +43,8 @@ extension UserAccessHistoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("UserDetailHistoryTableViewCell", owner: self, options: nil)?.first as! UserDetailHistoryTableViewCell
         cell.selectionStyle = .none
+        cell.directionLabel.textColor = UIColor.greenColor()
+//        cell.directionLabel.textColor = UIColor.redColor()
         return cell
     }
     

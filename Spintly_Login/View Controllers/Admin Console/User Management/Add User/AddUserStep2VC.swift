@@ -41,10 +41,6 @@ class AddUserStep2VC: UIViewController, UITextFieldDelegate {
         let addUseController = AddUserStep3VC()
         self.navigationController?.pushViewController(addUseController, animated: true)
     }
-    
-//    func textFieldDidBeginEditing(_ textField: UITextField) {
-//        textFieldBeginEditing = true
-//    }
 
 }
 
@@ -58,12 +54,7 @@ extension AddUserStep2VC: UITableViewDelegate, UITableViewDataSource {
         let cell = Bundle.main.loadNibNamed("AttributeTableViewCell", owner: self, options: nil)?.first as! AttributeTableViewCell
        
         cell.selectionStyle = .none
-        
-//        if textFieldBeginEditing == true {
-//             cell.attributeFieldPlaceholderLabel.isHidden = false
-//        } else {
-//             cell.attributeFieldPlaceholderLabel.isHidden = true
-//        }
+
         return cell
     }
     

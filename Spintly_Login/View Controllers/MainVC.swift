@@ -47,6 +47,19 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.navigationController!.setStatusBar()
+        
+//
+//        let statusBarFrame: CGRect
+//        if #available(iOS 13.0, *) {
+//            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
+//        } else {
+//            statusBarFrame = UIApplication.shared.statusBarFrame
+//        }
+//        let statusBarView = UIView(frame: statusBarFrame)
+//        statusBarView.backgroundColor = .red
+//        view.addSubview(statusBarView)
+        
 //      menuArray(opened: false, name : "Visitor Management", logo : "visitor_management", sectionData: [])
 
         menuList = [menuArray(opened: false, name : "Home", logo : "home", sectionData: []),

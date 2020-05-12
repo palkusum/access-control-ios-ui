@@ -15,6 +15,12 @@ class AddUserStep1VC: UIViewController {
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var reportingTo: UITextField!
     @IBOutlet var reportingToUnderlineView: UIView!
+    @IBOutlet var adminRoleCheckbox: UIButton!
+    @IBOutlet var managerRoleCheckbox: UIButton!
+    
+    
+    var isAdminChecked = false
+    var isManagerChecked = false
     
     var activeTextfield: UITextField!
     
@@ -52,13 +58,37 @@ class AddUserStep1VC: UIViewController {
          let addUseController = AddUserStep2VC()
          self.navigationController?.pushViewController(addUseController, animated: true)
     }
-
+    
+    
+    @IBAction func adminRoleCheckboxButton(_ sender: Any) {
+        
+        if isAdminChecked {
+            adminRoleCheckbox.setImage(UIImage(named: "check_box_active"), for: .normal)
+        } else {
+            adminRoleCheckbox.setImage(UIImage(named: "check_box_inactive"), for: .normal)
+        }
+        
+        isAdminChecked = !isAdminChecked
+    }
+    
+    @IBAction func managerRoleCheckboxButton(_ sender: UIButton) {
+        
+        if isManagerChecked {
+               managerRoleCheckbox.setImage(UIImage(named: "check_box_active"), for: .normal)
+           } else {
+               managerRoleCheckbox.setImage(UIImage(named: "check_box_inactive"), for: .normal)
+           }
+           
+           isManagerChecked = !isManagerChecked
+    }
+    
 }
+
 
 extension AddUserStep1VC: UITextFieldDelegate {
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.underLineTextField(UIColor.orange)
+        textField.underLineTextField(UIColor.orangeColor())
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
