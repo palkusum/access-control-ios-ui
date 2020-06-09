@@ -10,16 +10,6 @@ import Foundation
 import UIKit
 
 
-extension UIColor {
-
-//    class func appThemeBlueColor() -> UIColor{
-//        return UIColor.init(red: 28, green: 112, blue: 159)!
-//
-//    }
-//    class func darkBlueBackgroundColor() -> UIColor{
-//        return UIColor.init(red: 21, green: 61, blue: 90)!
-//    }
-}
 
 extension UITextField {
 
@@ -98,9 +88,24 @@ extension UINavigationController {
 
 extension UIColor {
     
-//   class func appThemeBlueColor() -> UIColor {
-//        return UIColor (red: 28/255.0, green: 112/255.0, blue: 159/255.0, alpha: 1.0)
-//    }
+    static func myColor() -> UIColor {
+    if #available(iOS 13, *) {
+        return UIColor.init { (trait) -> UIColor in
+            // the color can be from your own color config struct as well.
+            return trait.userInterfaceStyle == .dark ? UIColor.darkStatusColor() : UIColor.primaryColor()
+        }
+    }
+     else { return UIColor.primaryColor() }
+    }
+    
+    
+    class func primaryColor() -> UIColor {
+        return UIColor (red: 28/255.0, green: 111/255.0, blue: 159/255.0, alpha: 1.0)
+    }
+    
+    class func primaryDarkColor() -> UIColor {
+        return UIColor (red: 49/255.0, green: 67/255.0, blue: 117/255.0, alpha: 1.0)
+    }
     
     class func redColor() -> UIColor {
         return UIColor (red: 244/255.0, green: 67/255.0, blue: 54/255.0, alpha: 1.0)
@@ -122,12 +127,8 @@ extension UIColor {
         return UIColor (red: 0/255.0, green: 46/255.0, blue: 72/255.0, alpha: 1.0)
     }
     
-    class func primaryColor() -> UIColor {
-        return UIColor (red: 28/255.0, green: 112/255.0, blue: 159/255.0, alpha: 1.0)
-    }
-    
-    class func primaryDarkColor() -> UIColor {
-        return UIColor (red: 49/255.0, green: 67/255.0, blue: 117/255.0, alpha: 1.0)
+    class func darkStatusColor() -> UIColor {
+        return UIColor (red: 30/255.0, green: 30/255.0, blue: 30/255.0, alpha: 1.0)
     }
     
     

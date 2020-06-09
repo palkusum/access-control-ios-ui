@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -33,7 +34,7 @@
                                             <rect key="frame" x="0.0" y="23" width="320" height="105.5"/>
                                         </imageView>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.10980392160000001" green="0.43921568630000002" blue="0.62352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="LogoBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="WPE-gS-eWx" secondAttribute="trailing" id="JB0-tq-t6u"/>
                                         <constraint firstItem="WPE-gS-eWx" firstAttribute="centerX" secondItem="Flr-Si-Tmx" secondAttribute="centerX" id="avK-DG-icH"/>
@@ -46,11 +47,13 @@
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-p6-HAe">
                                             <rect key="frame" x="25.5" y="29" width="205" height="29"/>
+                                            <color key="backgroundColor" name="ForegroundColor"/>
+                                            <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" name="ForegroundColor"/>
                                     <constraints>
                                         <constraint firstItem="5MS-p6-HAe" firstAttribute="centerX" secondItem="Z7Z-RT-TcF" secondAttribute="centerX" id="P4l-Kp-7K2"/>
                                         <constraint firstItem="5MS-p6-HAe" firstAttribute="width" secondItem="Z7Z-RT-TcF" secondAttribute="width" multiplier="0.8" id="Ymc-WB-ZkE"/>
@@ -60,7 +63,7 @@
                                 </view>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMk-Ih-AuL">
                                     <rect key="frame" x="70.5" y="230.5" width="179" height="33.5"/>
-                                    <color key="backgroundColor" red="0.083753854190000004" green="0.2757184728" blue="0.41227791879999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" name="ButtonColor"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                     <state key="normal" title="NEXT">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -75,7 +78,7 @@
                                     </connections>
                                 </button>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <color key="backgroundColor" name="ViewBackgroundColor"/>
                             <constraints>
                                 <constraint firstItem="yMk-Ih-AuL" firstAttribute="height" secondItem="Z7Z-RT-TcF" secondAttribute="height" multiplier="0.35" id="9OG-4a-AdF"/>
                                 <constraint firstItem="Z7Z-RT-TcF" firstAttribute="centerX" secondItem="I0k-tf-uCh" secondAttribute="centerX" id="JAh-MO-wXs"/>
@@ -92,6 +95,7 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" name="ViewBackgroundColor"/>
                     <constraints>
                         <constraint firstItem="I0k-tf-uCh" firstAttribute="leading" secondItem="8G3-tX-kfx" secondAttribute="leading" id="3WM-iX-sJU"/>
                         <constraint firstAttribute="bottom" secondItem="I0k-tf-uCh" secondAttribute="bottom" id="Fcj-eK-Jrh"/>
@@ -100,7 +104,7 @@
                     </constraints>
                 </scrollView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" name="ViewBackgroundColor"/>
             <constraints>
                 <constraint firstItem="WPE-gS-eWx" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.22" id="0I3-bt-ZlO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8G3-tX-kfx" secondAttribute="trailing" id="7gi-Cg-D3U"/>
@@ -116,5 +120,17 @@
     </objects>
     <resources>
         <image name="spintly_logo" width="600" height="424"/>
+        <namedColor name="ButtonColor">
+            <color red="0.10980392156862745" green="0.43529411764705883" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ForegroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LogoBackgroundColor">
+            <color red="0.10980392156862745" green="0.43529411764705883" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

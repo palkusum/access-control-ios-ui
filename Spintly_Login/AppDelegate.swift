@@ -18,12 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        let mainVc = MainVC()
+        let mainVc = LoginVC()
         let nav = UINavigationController(rootViewController: mainVc)
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.tintColor = .white
         navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
-        navigationBarAppearace.barTintColor = UIColor.primaryColor()
+        navigationBarAppearace.barTintColor = .myColor()
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
         FirebaseApp.configure()

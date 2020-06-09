@@ -46,21 +46,6 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        self.navigationController!.setStatusBar()
-        
-//
-//        let statusBarFrame: CGRect
-//        if #available(iOS 13.0, *) {
-//            statusBarFrame = view.window?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect.zero
-//        } else {
-//            statusBarFrame = UIApplication.shared.statusBarFrame
-//        }
-//        let statusBarView = UIView(frame: statusBarFrame)
-//        statusBarView.backgroundColor = .red
-//        view.addSubview(statusBarView)
-        
-//      menuArray(opened: false, name : "Visitor Management", logo : "visitor_management", sectionData: [])
 
         menuList = [menuArray(opened: false, name : "Home", logo : "home", sectionData: []),
                     menuArray(opened: false, name : "Admin Console", logo : "admin_console",
@@ -118,7 +103,6 @@ class MainVC: UIViewController {
         }
         switch_organisation = !switch_organisation
         sideMenuTableView.reloadData()
-        print("down arrow", switch_organisation)
        }
 
     @objc func toggleDrawer() {
@@ -139,7 +123,6 @@ class MainVC: UIViewController {
                self.hiderView.isHidden = false
            })
        }
-        print("Hello World", showMenu)
        showMenu = !showMenu
     }
     
@@ -152,7 +135,6 @@ class MainVC: UIViewController {
             self.sideBarView.isHidden = true
         })
         showMenu = !showMenu
-       print("Tap func", showMenu)
     }
 
     @objc func moreButtonAction() {

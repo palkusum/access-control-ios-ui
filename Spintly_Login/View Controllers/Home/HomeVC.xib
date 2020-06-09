@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeVC" customModule="Spintly_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="EPx-35-Xyi">
+                    <rect key="frame" x="48" y="94" width="318" height="144"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h35-JZ-OgU">
+                            <rect key="frame" x="0.0" y="0.0" width="144" height="144"/>
+                            <state key="normal" image="access and attendance"/>
+                            <connections>
+                                <action selector="onItemCickedWithSender:" destination="-1" eventType="touchUpInside" id="SIf-Qn-dMf"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sS1-EB-rSh">
+                            <rect key="frame" x="174" y="0.0" width="144" height="144"/>
+                            <state key="normal" image="gps_attendance"/>
+                            <connections>
+                                <action selector="onItemCickedWithSender:" destination="-1" eventType="touchUpInside" id="V2u-5p-Vd7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr7-9M-gcw">
+                    <rect key="frame" x="48" y="273" width="144" height="144"/>
+                    <state key="normal" image="dashboard"/>
+                    <connections>
+                        <action selector="onItemCickedWithSender:" destination="-1" eventType="touchUpInside" id="TYe-qC-tqt"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="0.068332619863013699" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="tr7-9M-gcw" firstAttribute="leading" secondItem="EPx-35-Xyi" secondAttribute="leading" id="0y5-f0-ENF"/>
+                <constraint firstItem="EPx-35-Xyi" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="SKY-SZ-omk"/>
+                <constraint firstItem="tr7-9M-gcw" firstAttribute="top" secondItem="EPx-35-Xyi" secondAttribute="bottom" constant="35" id="tix-fl-f71"/>
+                <constraint firstItem="EPx-35-Xyi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="uaj-i1-6wk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="access and attendance" width="144" height="144"/>
+        <image name="dashboard" width="144" height="144"/>
+        <image name="gps_attendance" width="144" height="144"/>
+    </resources>
+</document>

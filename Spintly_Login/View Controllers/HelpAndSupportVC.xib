@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61Q-fj-Vzg" userLabel="Content View">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="1346"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="996"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helpNsupport" translatesAutoresizingMaskIntoConstraints="NO" id="1wl-q1-1ua">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="282"/>
@@ -271,7 +271,7 @@
                                     </userDefinedRuntimeAttributes>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-yt-zzZ" userLabel="Terms Policy Stack View">
-                                    <rect key="frame" x="144.5" y="1014" width="125" height="32"/>
+                                    <rect key="frame" x="144.5" y="1036" width="125" height="32"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xkp-gA-jg8">
                                             <rect key="frame" x="0.0" y="0.0" width="46" height="32"/>
@@ -320,7 +320,7 @@
                                 <constraint firstItem="gG9-XT-zTv" firstAttribute="top" secondItem="s3B-EE-bIc" secondAttribute="top" id="Zud-mi-OPr"/>
                                 <constraint firstItem="1wl-q1-1ua" firstAttribute="top" secondItem="61Q-fj-Vzg" secondAttribute="top" id="b6b-TJ-waw"/>
                                 <constraint firstItem="2AU-gW-FBO" firstAttribute="top" secondItem="9W8-Hi-ZS4" secondAttribute="top" id="co9-aP-4XL"/>
-                                <constraint firstItem="NHx-yt-zzZ" firstAttribute="bottom" secondItem="aEu-dB-cda" secondAttribute="bottom" constant="65" id="dMN-2U-sES"/>
+                                <constraint firstItem="NHx-yt-zzZ" firstAttribute="top" secondItem="aEu-dB-cda" secondAttribute="bottom" constant="55" id="dMN-2U-sES"/>
                                 <constraint firstItem="MYm-QC-a5K" firstAttribute="top" secondItem="mmY-RV-hcF" secondAttribute="bottom" constant="10" id="fqT-jp-Nyi"/>
                                 <constraint firstItem="IIU-vr-cFs" firstAttribute="leading" secondItem="pbr-7L-O6s" secondAttribute="leading" constant="30" id="hGU-y8-vh6"/>
                                 <constraint firstItem="TdX-Uf-BHD" firstAttribute="top" secondItem="iww-vb-1Ai" secondAttribute="bottom" constant="35" id="jSk-qc-cPp"/>
@@ -351,7 +351,7 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="4gu-TZ-1em" secondAttribute="top" id="JFY-Ln-Jet"/>
-                <constraint firstItem="61Q-fj-Vzg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" constant="450" id="Kkq-kC-Lsb"/>
+                <constraint firstItem="61Q-fj-Vzg" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" constant="100" id="Kkq-kC-Lsb"/>
                 <constraint firstItem="61Q-fj-Vzg" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="N1W-2q-so0"/>
                 <constraint firstItem="4gu-TZ-1em" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="bmV-t5-k3T"/>
                 <constraint firstItem="4gu-TZ-1em" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fj8-Dq-NLY"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class AccessAttendanceVC: UIViewController {
 
     @IBOutlet var barrierTableView: UITableView!
     @IBOutlet var notFoundLabel: UILabel!
@@ -18,6 +18,8 @@ class HomeVC: UIViewController {
          barrierTableViewSetUp()
         
         notFoundLabel.isHidden = true
+        
+        self.title = "Access & Attendance"
     }
     
     override func viewDidLayoutSubviews() {
@@ -32,7 +34,7 @@ class HomeVC: UIViewController {
 
 }
 
-extension HomeVC: UITableViewDelegate, UITableViewDataSource {
+extension AccessAttendanceVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 14
     }

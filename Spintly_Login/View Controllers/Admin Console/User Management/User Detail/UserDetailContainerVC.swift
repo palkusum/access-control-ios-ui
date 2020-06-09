@@ -28,6 +28,9 @@ class UserDetailContainerVC: UIViewController {
         self.title = "User Details"
         tableViewSetup()
         
+//        listTableView.estimatedRowHeight = 60
+//        listTableView.rowHeight = UITableView.automaticDimension
+        
         
         adminManagerLabel.isHidden = true
     }
@@ -65,5 +68,10 @@ extension UserDetailContainerVC: UITableViewDelegate, UITableViewDataSource {
             break
         }
     }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//
+//        return UITableView.automaticDimension
+//    }
     
 }

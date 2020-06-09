@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GpsVC" customModule="Spintly_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="checkinCheckoutButton" destination="uWC-RY-ta6" id="H9Y-n9-xje"/>
+                <outlet property="statusLabel" destination="tvm-Uw-5cp" id="8nH-DB-7kB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hsq-hY-euc">
+                    <rect key="frame" x="91.5" y="73" width="231.5" height="20.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Status :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cle-jt-8y0">
+                            <rect key="frame" x="0.0" y="0.0" width="121" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Checked-out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvm-Uw-5cp">
+                            <rect key="frame" x="131" y="0.0" width="100.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H1g-LQ-hWE">
+                    <rect key="frame" x="2" y="113.5" width="410" height="1"/>
+                    <color key="backgroundColor" white="0.33000000000000002" alpha="0.39000000000000001" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="9Gm-vF-gFz"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="P6b-Rq-8EJ" userLabel="GPS Stack View">
+                    <rect key="frame" x="95" y="139.5" width="224" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gps_icon" translatesAutoresizingMaskIntoConstraints="NO" id="0wW-Cb-eZa">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="8sG-tl-LKQ"/>
+                                <constraint firstAttribute="width" secondItem="0wW-Cb-eZa" secondAttribute="height" multiplier="1:1" id="jKe-ok-x1y"/>
+                                <constraint firstAttribute="height" constant="50" id="rDP-GH-4VS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GPS Attendance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJc-Gu-cxr">
+                            <rect key="frame" x="60" y="0.0" width="164" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWC-RY-ta6">
+                    <rect key="frame" x="20" y="204.5" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="z7F-Iz-Lxe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClicked:" destination="-1" eventType="touchUpInside" id="Q4R-lu-Mw3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="P6b-Rq-8EJ" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="673-04-sHk"/>
+                <constraint firstItem="hsq-hY-euc" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="EzI-Pm-MYK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="H1g-LQ-hWE" secondAttribute="trailing" constant="2" id="Ih8-GG-y7x"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uWC-RY-ta6" secondAttribute="trailing" constant="20" id="VL2-4c-65p"/>
+                <constraint firstItem="H1g-LQ-hWE" firstAttribute="top" secondItem="hsq-hY-euc" secondAttribute="bottom" constant="20" id="eLB-p1-ZK8"/>
+                <constraint firstItem="hsq-hY-euc" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="29" id="iLf-au-EYR"/>
+                <constraint firstItem="uWC-RY-ta6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jhJ-Zn-qEg"/>
+                <constraint firstItem="P6b-Rq-8EJ" firstAttribute="top" secondItem="H1g-LQ-hWE" secondAttribute="bottom" constant="25" id="nN6-1C-WHS"/>
+                <constraint firstItem="uWC-RY-ta6" firstAttribute="top" secondItem="P6b-Rq-8EJ" secondAttribute="bottom" constant="15" id="niZ-zn-u68"/>
+                <constraint firstItem="uWC-RY-ta6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="sQk-QU-PYw"/>
+                <constraint firstItem="H1g-LQ-hWE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="2" id="sY9-cv-uKr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gps_icon" width="128" height="128"/>
+    </resources>
+</document>
