@@ -167,11 +167,11 @@ extension AccessHistoryVC: UITableViewDelegate, UITableViewDataSource {
 
 extension AccessHistoryVC: ToolbarPickerViewDelegate {
 
-    func didTapDone() {
+    func didTapDone(_ pickerView: UIPickerView) {
         self.barrierField.resignFirstResponder()
     }
 
-    func didTapCancel() {
+    func didTapCancel(_ pickerView: UIPickerView) {
         self.barrierField.text = nil
         self.barrierField.resignFirstResponder()
     }

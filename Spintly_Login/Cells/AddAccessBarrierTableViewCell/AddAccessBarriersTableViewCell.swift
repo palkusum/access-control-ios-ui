@@ -14,4 +14,9 @@ class AddAccessBarriersTableViewCell: UITableViewCell {
     
     @IBOutlet var barrierLabel: UILabel!
     
+    override func awakeFromNib() {
+        checkboxButton.setImage(UIImage(named: "check_box_disabled"), for: [.disabled, .selected])
+        checkboxButton.setImage(UIImage(named: "check_box_active"), for: .selected)
+        checkboxButton.setImage(UIImage(named: "check_box_inactive"), for: .normal)
+    }
 }

@@ -10,15 +10,16 @@ import UIKit
 
 class ConfirmPasswordVC: UIViewController {
 
+    var phoneNumber : String!
     
     @IBOutlet var cardView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cardView.layer.shadowColor = UIColor.black.cgColor
-        cardView.layer.shadowOpacity = 0.2
-        cardView.layer.shadowOffset = .zero
+//
+//        cardView.layer.shadowColor = UIColor.black.cgColor
+//        cardView.layer.shadowOpacity = 0.2
+//        cardView.layer.shadowOffset = .zero
     }
 
    

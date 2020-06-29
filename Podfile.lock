@@ -1,4 +1,14 @@
 PODS:
+  - Alamofire (4.9.1)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - AWSCognitoIdentityProvider (2.6.32):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.6.32)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.6.32)
+  - AWSSNS (2.6.32):
+    - AWSCore (= 2.6.32)
   - Firebase (5.12.0):
     - Firebase/Core (= 5.12.0)
   - Firebase/Core (5.12.0):
@@ -21,6 +31,9 @@ PODS:
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
   - GoogleAppMeasurement (5.3.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -45,17 +58,56 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.4):
     - GoogleUtilities/Logger
+  - IQKeyboardManagerSwift (6.2.0)
+  - KRActivityIndicatorView (3.0.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - ReachabilitySwift (4.3.0)
+  - Realm (3.17.0):
+    - Realm/Headers (= 3.17.0)
+  - Realm/Headers (3.17.0)
+  - RealmSwift (3.17.0):
+    - Realm (= 3.17.0)
+  - SwifterSwift (4.6.0):
+    - SwifterSwift/AppKit (= 4.6.0)
+    - SwifterSwift/CoreGraphics (= 4.6.0)
+    - SwifterSwift/CoreLocation (= 4.6.0)
+    - SwifterSwift/Foundation (= 4.6.0)
+    - SwifterSwift/MapKit (= 4.6.0)
+    - SwifterSwift/SpriteKit (= 4.6.0)
+    - SwifterSwift/SwiftStdlib (= 4.6.0)
+    - SwifterSwift/UIKit (= 4.6.0)
+  - SwifterSwift/AppKit (4.6.0)
+  - SwifterSwift/CoreGraphics (4.6.0)
+  - SwifterSwift/CoreLocation (4.6.0)
+  - SwifterSwift/Foundation (4.6.0)
+  - SwifterSwift/MapKit (4.6.0)
+  - SwifterSwift/SpriteKit (4.6.0)
+  - SwifterSwift/SwiftStdlib (4.6.0)
+  - SwifterSwift/UIKit (4.6.0)
+  - SwiftKeychainWrapper (3.4.0)
+  - Toast-Swift (4.0.0)
 
 DEPENDENCIES:
+  - AlamofireNetworkActivityIndicator (= 2.3.0)
+  - AWSCognitoIdentityProvider (= 2.6.32)
+  - AWSCore (= 2.6.32)
+  - AWSSNS (= 2.6.32)
   - Firebase
+  - FlagPhoneNumber (from `https://github.com/anees17861/FlagPhoneNumber.git`)
+  - IQKeyboardManagerSwift (= 6.2.0)
+  - KRActivityIndicatorView (= 3.0.0)
+  - ReachabilitySwift (= 4.3.0)
+  - RealmSwift (= 3.17.0)
+  - SwifterSwift (= 4.6.0)
+  - SwiftKeychainWrapper (= 3.4)
+  - Toast-Swift (= 4.0.0)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Firebase
     - FirebaseAnalytics
     - FirebaseCore
@@ -63,16 +115,55 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - nanopb
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSSNS
+    - IQKeyboardManagerSwift
+    - KRActivityIndicatorView
+    - ReachabilitySwift
+    - Realm
+    - RealmSwift
+    - SwifterSwift
+    - SwiftKeychainWrapper
+    - Toast-Swift
+
+EXTERNAL SOURCES:
+  FlagPhoneNumber:
+    :git: https://github.com/anees17861/FlagPhoneNumber.git
+
+CHECKOUT OPTIONS:
+  FlagPhoneNumber:
+    :commit: 1817ad6d4b7fc1b18ddf193bcaa15b29935da63e
+    :git: https://github.com/anees17861/FlagPhoneNumber.git
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  AWSCognitoIdentityProvider: 1ac74ed3ddc96a1e072868c10d43f8630eebdfed
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: bfb49938a3a4eb190bc68edf1fa9e90969de8fa2
+  AWSSNS: f576a8861a6db426339726442bab043a8e7dd441
   Firebase: 9190018e296139d938b99521cde0c15a6e8d2946
   FirebaseAnalytics: 63202d2665de4e6adcbdce189135255d8b5962ba
   FirebaseCore: 027d350adc039aa5483357c6f56556f117c5170e
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
   GoogleAppMeasurement: 5029d78f2b438bd30ffb44e6c558b57c21622727
   GoogleUtilities: abb092d2c12e817fa3e0e7b274987dd72fb86ec3
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  KRActivityIndicatorView: c414000730a6f4969eeb354bee4f2aebc89c2c2e
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  Realm: b30db41ff34fc858ffc25ba8d44a82c164e7ccd0
+  RealmSwift: fe733e459d60dc7b6971d4cbee2eb4854097d12c
+  SwifterSwift: 812ffec6f301922f5430e75be3f2939ea3a80024
+  SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
+  Toast-Swift: 594b5c5e5129f15438e410207e43287f027b3c00
 
-PODFILE CHECKSUM: 0e1925d84e1468c11cf89ccf1f1b1060b62e232c
+PODFILE CHECKSUM: 3bd173af219ef15853b1d2677db7dd90bc0f4100
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.4

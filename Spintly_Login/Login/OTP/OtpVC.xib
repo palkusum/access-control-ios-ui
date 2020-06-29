@@ -10,7 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtpVC" customModule="Spintly_Login" customModuleProvider="target">
             <connections>
-                <outlet property="cardView" destination="zeo-3U-ogu" id="88W-CJ-AOO"/>
+                <outlet property="OTPInputTextField" destination="Ayu-0F-hOi" id="yud-M0-4J3"/>
+                <outlet property="OTPSentLabel" destination="tac-JL-OPF" id="5b3-0h-QuY"/>
+                <outlet property="timeRemainingLabel" destination="ufA-2a-CrY" id="eL8-sA-5T4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -78,11 +80,17 @@
                                                     <integer key="value" value="10"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="verifyOTP" destination="-1" eventType="touchUpInside" id="1gr-oo-eUx"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnr-rD-Eq1">
                                             <rect key="frame" x="84.5" y="212.5" width="87" height="29"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <state key="normal" title="Resend OTP?"/>
+                                            <connections>
+                                                <action selector="resendOTPButtonPressed:" destination="-1" eventType="touchUpInside" id="Soe-B5-lti"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

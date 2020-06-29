@@ -77,7 +77,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="arrow" destination="4TG-fk-QYD" id="qQQ-Yf-qUB"/>
                 <outlet property="reportingToTextField" destination="ZxT-uc-vjz" id="0n7-9U-6Pb"/>
+                <outlet property="underline" destination="DGi-9q-SDS" id="p8R-Ih-DrQ"/>
             </connections>
             <point key="canvasLocation" x="82.608695652173921" y="153.01339285714286"/>
         </tableViewCell>

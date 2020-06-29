@@ -10,10 +10,22 @@ import UIKit
 
 class RolesTableViewCell: UITableViewCell {
 
-   
-    @IBOutlet var adminCheckboxButton: UIButton!
+    @IBOutlet var checkBox: UIButton!
     
-    @IBOutlet var managerCheckboxButton: UIButton!
+    var returnValue: ((_ value: Bool)->())?
+
+    override func awakeFromNib() {
+        checkBox.setImage(UIImage(named: "check_box_disabled"), for: [.disabled, .selected])
+        checkBox.setImage(UIImage(named: "check_box_active"), for: .selected)
+        checkBox.setImage(UIImage(named: "check_box_inactive"), for: .normal)
+        checkBox.addTarget(self, action: #selector(self.toggleState(_:)), for: .touchUpInside)
+    }
     
-    @IBOutlet var enduserCheckboxButton: UIButton!
+    @objc func toggleState(_ button : UIButton) {
+        button.isSelected = !button.isSelected
+        returnValue?(button.isSelected)
+    }
+    
+    
+    
 }

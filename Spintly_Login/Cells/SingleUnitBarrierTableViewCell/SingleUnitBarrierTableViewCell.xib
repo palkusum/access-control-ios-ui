@@ -8,27 +8,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SingleUnitBarrierTableViewCell" customModule="Spintly_Login" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="KGk-i7-Jjw" customClass="SingleUnitBarrierTableViewCell" customModule="Spintly_Login" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="359" height="68"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="226" id="KGk-i7-Jjw" customClass="SingleUnitBarrierTableViewCell" customModule="Spintly_Login" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="226"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="359" height="68"/>
+                <rect key="frame" x="0.0" y="0.0" width="359" height="226"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwF-wc-Ubd" customClass="CardView" customModule="Spintly_Login" customModuleProvider="target">
-                        <rect key="frame" x="20" y="10" width="319" height="48"/>
+                        <rect key="frame" x="20" y="10" width="319" height="206"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barrier_logo" translatesAutoresizingMaskIntoConstraints="NO" id="X8j-zT-qAL">
-                                <rect key="frame" x="20" y="-1" width="50" height="50"/>
+                                <rect key="frame" x="20" y="78" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="DoD-Nd-MEH"/>
                                     <constraint firstAttribute="width" constant="50" id="mCf-tj-Kwz"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wC9-JH-cZ1" userLabel="Barrier Stack View">
-                                <rect key="frame" x="85" y="5" width="60" height="38.5"/>
+                                <rect key="frame" x="85" y="84" width="60" height="38.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office 1" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wel-Zf-HJg">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="20.5"/>
@@ -44,8 +44,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hWl-dT-rrw" userLabel="Status Stack View">
-                                <rect key="frame" x="226" y="-2" width="73" height="52"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hWl-dT-rrw" userLabel="Status Stack View">
+                                <rect key="frame" x="226" y="77" width="73" height="52"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c34-e1-3bO">
                                         <rect key="frame" x="0.0" y="0.0" width="73" height="30"/>
@@ -54,7 +54,7 @@
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check-out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJj-hQ-i8G">
-                                        <rect key="frame" x="2.5" y="35" width="68" height="17"/>
+                                        <rect key="frame" x="5" y="35" width="68" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" red="0.42352941179999998" green="0.47450980390000003" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -64,10 +64,16 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hWl-dT-rrw" secondAttribute="bottom" constant="8" id="1eb-7Q-bxV"/>
                             <constraint firstItem="X8j-zT-qAL" firstAttribute="centerY" secondItem="OwF-wc-Ubd" secondAttribute="centerY" id="3IH-71-WTz"/>
+                            <constraint firstItem="hWl-dT-rrw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OwF-wc-Ubd" secondAttribute="top" constant="8" id="Blm-ge-MxU"/>
                             <constraint firstItem="X8j-zT-qAL" firstAttribute="leading" secondItem="OwF-wc-Ubd" secondAttribute="leading" constant="20" id="gtB-Jp-7bO"/>
+                            <constraint firstItem="hWl-dT-rrw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wC9-JH-cZ1" secondAttribute="trailing" constant="8" id="iNX-Us-iY4"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="wC9-JH-cZ1" secondAttribute="bottom" constant="8" id="inm-jw-hDD"/>
                             <constraint firstItem="wC9-JH-cZ1" firstAttribute="centerY" secondItem="OwF-wc-Ubd" secondAttribute="centerY" id="jST-ER-CRI"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="v8C-FG-KBY"/>
                             <constraint firstItem="wC9-JH-cZ1" firstAttribute="leading" secondItem="X8j-zT-qAL" secondAttribute="trailing" constant="15" id="vgL-Ds-HZ8"/>
+                            <constraint firstItem="wC9-JH-cZ1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OwF-wc-Ubd" secondAttribute="top" constant="8" id="wqe-10-ScR"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
@@ -77,7 +83,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="hWl-dT-rrw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LJ9-SG-6b2"/>
+                    <constraint firstItem="hWl-dT-rrw" firstAttribute="centerY" secondItem="OwF-wc-Ubd" secondAttribute="centerY" id="LJ9-SG-6b2"/>
                     <constraint firstAttribute="trailing" secondItem="OwF-wc-Ubd" secondAttribute="trailing" constant="20" id="Qhb-eU-laC"/>
                     <constraint firstItem="OwF-wc-Ubd" firstAttribute="trailing" secondItem="hWl-dT-rrw" secondAttribute="trailing" constant="20" id="R4H-iM-4GZ"/>
                     <constraint firstItem="OwF-wc-Ubd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="U6j-H5-1eZ"/>
@@ -92,7 +98,7 @@
                 <outlet property="checkinCheckoutButton" destination="c34-e1-3bO" id="QyF-e4-Rtd"/>
                 <outlet property="statusLabel" destination="eJj-hQ-i8G" id="8ZR-yd-Bmp"/>
             </connections>
-            <point key="canvasLocation" x="226.81159420289856" y="68.303571428571431"/>
+            <point key="canvasLocation" x="226.81159420289856" y="121.20535714285714"/>
         </tableViewCell>
     </objects>
     <resources>

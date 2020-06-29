@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationVC" customModule="Spintly" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="8Sg-4w-Hlj" id="eTO-E2-DFf"/>
+                <outlet property="tableView" destination="MJg-kM-2Li" id="UfV-og-mHr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MJg-kM-2Li">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Sg-4w-Hlj">
+                    <rect key="frame" x="235" y="395" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="65" id="BaQ-L0-8fo"/>
+                        <constraint firstAttribute="height" constant="65" id="Quw-e4-dtK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" image="floating delete button"/>
+                    <connections>
+                        <action selector="onDeletePressed:" destination="-1" eventType="touchUpInside" id="PJD-pt-QFS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MJg-kM-2Li" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tub-j9-w84"/>
+                <constraint firstItem="8Sg-4w-Hlj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-20" id="X27-mj-T3h"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MJg-kM-2Li" secondAttribute="trailing" id="ch0-bu-OiC"/>
+                <constraint firstItem="8Sg-4w-Hlj" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="dt6-IB-WLy"/>
+                <constraint firstItem="MJg-kM-2Li" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jDC-lb-DTt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="MJg-kM-2Li" secondAttribute="bottom" id="xiQ-rd-fFb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="floating delete button" width="86" height="86"/>
+    </resources>
+</document>

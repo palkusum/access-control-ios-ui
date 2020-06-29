@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BluetoothOffVC" customModule="Spintly_Login" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-0v-P5N">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHp-e1-2c0" userLabel="Content View">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth_on" translatesAutoresizingMaskIntoConstraints="NO" id="Z4c-rS-kCq">
+                                    <rect key="frame" x="-101" y="50" width="616" height="916"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please turn on the Bluetooth as shown in the above image." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ygn-Sm-yAq">
+                                    <rect key="frame" x="10" y="986" width="394" height="43"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Lm-r2-h3e">
+                                    <rect key="frame" x="154.5" y="1069" width="105" height="41"/>
+                                    <color key="backgroundColor" name="ButtonColor"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
+                                    <state key="normal" title="Dismiss">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="1Lm-r2-h3e" firstAttribute="top" secondItem="Ygn-Sm-yAq" secondAttribute="bottom" constant="40" id="E74-0n-KMN"/>
+                                <constraint firstItem="Z4c-rS-kCq" firstAttribute="top" secondItem="FHp-e1-2c0" secondAttribute="top" constant="50" id="KAi-Yb-Zgv"/>
+                                <constraint firstItem="Z4c-rS-kCq" firstAttribute="centerX" secondItem="FHp-e1-2c0" secondAttribute="centerX" id="QA5-lu-GFb"/>
+                                <constraint firstItem="Ygn-Sm-yAq" firstAttribute="top" secondItem="Z4c-rS-kCq" secondAttribute="bottom" constant="20" id="WUv-OI-9ZJ"/>
+                                <constraint firstItem="1Lm-r2-h3e" firstAttribute="centerX" secondItem="FHp-e1-2c0" secondAttribute="centerX" id="esK-R5-zPt"/>
+                                <constraint firstItem="Ygn-Sm-yAq" firstAttribute="leading" secondItem="FHp-e1-2c0" secondAttribute="leading" constant="10" id="oNl-Cb-C8e"/>
+                                <constraint firstAttribute="trailing" secondItem="Ygn-Sm-yAq" secondAttribute="trailing" constant="10" id="p7o-MG-Gxb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="FHp-e1-2c0" firstAttribute="top" secondItem="WGK-0v-P5N" secondAttribute="top" id="Bcq-rh-8c3"/>
+                        <constraint firstAttribute="bottom" secondItem="FHp-e1-2c0" secondAttribute="bottom" id="Kn0-1a-JQF"/>
+                        <constraint firstItem="FHp-e1-2c0" firstAttribute="leading" secondItem="WGK-0v-P5N" secondAttribute="leading" id="ctA-PA-Ng0"/>
+                        <constraint firstAttribute="trailing" secondItem="FHp-e1-2c0" secondAttribute="trailing" id="mPD-r0-f3U"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WGK-0v-P5N" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="6qR-Cm-e2z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WGK-0v-P5N" secondAttribute="bottom" id="Avx-0t-mzb"/>
+                <constraint firstItem="WGK-0v-P5N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="BLf-Cc-jmd"/>
+                <constraint firstItem="FHp-e1-2c0" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" priority="250" id="W6g-BJ-XdE"/>
+                <constraint firstItem="FHp-e1-2c0" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="oTa-3w-QH7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WGK-0v-P5N" secondAttribute="trailing" id="te6-rV-kPS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="114"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bluetooth_on" width="308" height="458"/>
+        <namedColor name="ButtonColor">
+            <color red="0.10980392156862745" green="0.43529411764705883" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

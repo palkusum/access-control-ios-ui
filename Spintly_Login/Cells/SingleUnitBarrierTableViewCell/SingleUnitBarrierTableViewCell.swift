@@ -19,4 +19,19 @@ class SingleUnitBarrierTableViewCell: UITableViewCell {
     
     @IBOutlet var statusLabel: UILabel!
     
+    func setCheckedIn(_ isCheckedIn : Bool) {
+        if (isCheckedIn) {
+            checkinCheckoutButton.setTitle("Check-out", for: .normal)
+            checkinCheckoutButton.setTitleColor(.red, for: .normal)
+            checkinCheckoutButton.borderButton(.red)
+            statusLabel.text = "Checked-in"
+            
+        } else {
+            checkinCheckoutButton.setTitle("Check-in", for: .normal)
+            checkinCheckoutButton.setTitleColor(.green, for: .normal)
+            checkinCheckoutButton.borderButton(.green)
+            statusLabel.text = "Checked-out"
+        }
+    }
+    
 }

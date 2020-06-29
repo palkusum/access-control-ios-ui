@@ -8,11 +8,13 @@
 
 import UIKit
 
-class AttributeTableViewCell: UITableViewCell {
+class AttributeTableViewCell: UITableViewCell, UITextFieldDelegate {
 
 
     @IBOutlet var placeholder: UILabel!
     @IBOutlet var attributeField: UITextField!
+    @IBOutlet var underline: UIView!
+    @IBOutlet var arrow: UIButton!
     
     @IBOutlet var attributeFieldPlaceholderLabel: UILabel!
     
@@ -27,6 +29,37 @@ class AttributeTableViewCell: UITableViewCell {
         attributeField.rightView = imageUIView
         attributeField.rightViewMode = .always
         
+    }
+    
+    var isEditable: Bool = false {
+        didSet {
+            attributeField.isEnabled = isEditable
+            underline.isHidden = !isEditable
+            arrow.isHidden = !isEditable
+        }
+    }
+        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        attributeField.delegate = self
+    }
+    @IBAction func onArrowClicked(_ sender: UIButton) {
+        attributeField.becomeFirstResponder()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        underline.backgroundColor = .orange
+
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        underline.backgroundColor = .lightGray
+
     }
     
 }

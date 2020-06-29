@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "083CF718005F1C04441C6EA553337E88"
+               BlueprintIdentifier = "3C8151F96C282A3ADBE874BDA5FB16F6"
                BuildableName = "Pods_Spintly_Login.framework"
                BlueprintName = "Pods-Spintly_Login"
                ReferencedContainer = "container:Pods.xcodeproj">
