@@ -52,6 +52,8 @@
 		4C46767A23F04EBF00471622 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46767823F04EBF00471622 /* PasswordVC.swift */; };
 		4C46767B23F04EBF00471622 /* Password2VC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C46767923F04EBF00471622 /* Password2VC.xib */; };
 		4C46767E23F054ED00471622 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C46767D23F054ED00471622 /* Extension.swift */; };
+		4C543D8924AA4E0600E88E8B /* UserManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C543D8724AA4E0500E88E8B /* UserManagementVC.xib */; };
+		4C543D8A24AA4E0600E88E8B /* UserManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C543D8824AA4E0600E88E8B /* UserManagementVC.swift */; };
 		4C6A945D240D0D200021BE84 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6A945C240D0D200021BE84 /* CardView.swift */; };
 		4C6BB16C244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */; };
 		4C6BB16D244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */; };
@@ -80,8 +82,6 @@
 		4C9C108724A4FCC200FAED66 /* PermissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C108624A4FCC200FAED66 /* PermissionModel.swift */; };
 		4C9C109024A4FF1000FAED66 /* SingleUnitBarrierTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9C108E24A4FF1000FAED66 /* SingleUnitBarrierTableViewCell.xib */; };
 		4C9C109124A4FF1000FAED66 /* SingleUnitBarrierTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C108F24A4FF1000FAED66 /* SingleUnitBarrierTableViewCell.swift */; };
-		4C9C109424A5017900FAED66 /* UserManagementVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9C109224A5017900FAED66 /* UserManagementVC.xib */; };
-		4C9C109524A5017900FAED66 /* UserManagementVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C109324A5017900FAED66 /* UserManagementVC.swift */; };
 		4C9C109824A502D500FAED66 /* UserDetailContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9C109624A502D400FAED66 /* UserDetailContainerVC.swift */; };
 		4C9C109924A502D500FAED66 /* UserDetailContainerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9C109724A502D500FAED66 /* UserDetailContainerVC.xib */; };
 		4C9C10A424A5049E00FAED66 /* HistoryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9C109C24A5049C00FAED66 /* HistoryVC.xib */; };
@@ -185,6 +185,8 @@
 		4C46767823F04EBF00471622 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
 		4C46767923F04EBF00471622 /* Password2VC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Password2VC.xib; sourceTree = "<group>"; };
 		4C46767D23F054ED00471622 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4C543D8724AA4E0500E88E8B /* UserManagementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserManagementVC.xib; sourceTree = "<group>"; };
+		4C543D8824AA4E0600E88E8B /* UserManagementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManagementVC.swift; sourceTree = "<group>"; };
 		4C6A945C240D0D200021BE84 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		4C6BB16A244DADF900CD9140 /* AddAccessBarriersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccessBarriersTableViewCell.swift; sourceTree = "<group>"; };
 		4C6BB16B244DADF900CD9140 /* AddAccessBarriersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddAccessBarriersTableViewCell.xib; sourceTree = "<group>"; };
@@ -213,8 +215,6 @@
 		4C9C108624A4FCC200FAED66 /* PermissionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PermissionModel.swift; sourceTree = "<group>"; };
 		4C9C108E24A4FF1000FAED66 /* SingleUnitBarrierTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SingleUnitBarrierTableViewCell.xib; sourceTree = "<group>"; };
 		4C9C108F24A4FF1000FAED66 /* SingleUnitBarrierTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleUnitBarrierTableViewCell.swift; sourceTree = "<group>"; };
-		4C9C109224A5017900FAED66 /* UserManagementVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UserManagementVC.xib; path = "../../../../../Desktop/access-control-ios-app/Spintly/View Controllers/UserManagement/UserManagementVC.xib"; sourceTree = "<group>"; };
-		4C9C109324A5017900FAED66 /* UserManagementVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserManagementVC.swift; path = "../../../../../Desktop/access-control-ios-app/Spintly/View Controllers/UserManagement/UserManagementVC.swift"; sourceTree = "<group>"; };
 		4C9C109624A502D400FAED66 /* UserDetailContainerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailContainerVC.swift; sourceTree = "<group>"; };
 		4C9C109724A502D500FAED66 /* UserDetailContainerVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserDetailContainerVC.xib; sourceTree = "<group>"; };
 		4C9C109C24A5049C00FAED66 /* HistoryVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryVC.xib; sourceTree = "<group>"; };
@@ -725,9 +725,9 @@
 		4CC726962447144D00518248 /* User Management */ = {
 			isa = PBXGroup;
 			children = (
+				4C543D8824AA4E0600E88E8B /* UserManagementVC.swift */,
+				4C543D8724AA4E0500E88E8B /* UserManagementVC.xib */,
 				4C9C10B824A516B400FAED66 /* AddUser */,
-				4C9C109324A5017900FAED66 /* UserManagementVC.swift */,
-				4C9C109224A5017900FAED66 /* UserManagementVC.xib */,
 				4C1676F82450577C00D7AC23 /* User Detail */,
 			);
 			path = "User Management";
@@ -865,10 +865,10 @@
 				4CC726912446323A00518248 /* AccessAttendanceVC.xib in Resources */,
 				4CC7269524463FD200518248 /* UserListTableViewCell.xib in Resources */,
 				4C9C10A824A5049E00FAED66 /* InformationVC.xib in Resources */,
-				4C9C109424A5017900FAED66 /* UserManagementVC.xib in Resources */,
 				4C46766523F04C3F00471622 /* Assets.xcassets in Resources */,
 				4C1729C32439109E00D68D29 /* HelpAndSupportVC.xib in Resources */,
 				4C1A5CD624A5229800A372B6 /* MainVC.xib in Resources */,
+				4C543D8924AA4E0600E88E8B /* UserManagementVC.xib in Resources */,
 				4C9D8F5E244315FC001C472B /* AccessHistoryTableViewCell.xib in Resources */,
 				4C23869E24497BCC00D83C4B /* GoogleService-Info.plist in Resources */,
 				4C1729CB243AE3FE00D68D29 /* VisitorManagementVC.xib in Resources */,
@@ -998,6 +998,7 @@
 				4C9C10AD24A5097900FAED66 /* AccessHistoryModel.swift in Sources */,
 				4C1A8D6C2434A56E00CAD853 /* MainVC1.swift in Sources */,
 				4CD072F32400F456007BF693 /* EnterPhoneVC.swift in Sources */,
+				4C543D8A24AA4E0600E88E8B /* UserManagementVC.swift in Sources */,
 				4C81D3F024A4CCFA0066BB3B /* RealmConfiguration.swift in Sources */,
 				4C1729BE24390C3100D68D29 /* AccessAttendanceVC.swift in Sources */,
 				4C7D5CF524756B830063BEB5 /* ShiftFilterCategoryTableViewCell.swift in Sources */,
@@ -1013,7 +1014,6 @@
 				4CD072FD2402D7CB007BF693 /* ConfirmPasswordVC.swift in Sources */,
 				4CCF78AA243DF0100074ECFD /* AccessHistoryVC.swift in Sources */,
 				4C9C10C224A516B400FAED66 /* AddUserStep3VC.swift in Sources */,
-				4C9C109524A5017900FAED66 /* UserManagementVC.swift in Sources */,
 				4CD495472403DB06003B2398 /* OtpVC.swift in Sources */,
 				4C9C10AF24A5097900FAED66 /* AccessBarrierModel.swift in Sources */,
 				4C46765C23F04C3E00471622 /* AppDelegate.swift in Sources */,

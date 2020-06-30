@@ -163,10 +163,10 @@ class PasswordVC: UIViewController {
     }
     
     func generateAWSARN(completion: @escaping (_ endpoint : String?, _ errorMessage : String?)->Void) {
-        #if targetEnvironment(simulator)
-        completion("simulator", nil)
-        return
-        #endif
+//        #if targetEnvironment(simulator)
+//        completion("simulator", nil)
+//        return
+//        #endif
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: CognitoIdentityUserPoolRegion, identityPoolId: CognitoIdentityUserPoolId, identityProviderManager: AWSCredentialsManager.shared.userPool)
         let configuration = AWSServiceConfiguration(region: CognitoIdentityUserPoolRegion, credentialsProvider: credentialsProvider)
         AWSSNS.register(with: configuration!, forKey: "APSouth1SNS")
