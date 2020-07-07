@@ -96,9 +96,11 @@ class PasswordVC: UIViewController {
         let alertController = UIAlertController(title: "Please wait", message: "Fetching Data..", preferredStyle: .alert)
         self.present(alertController, animated: true, overwrite: true)
         self.registerDevice() { errorMessage in
+             print("OnLoginComplete Error Before")
             if let message = errorMessage {
                 let errorAlert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
                 errorAlert.addAction(UIAlertAction(title: "Ok", style: .default))
+                 print("OnLoginComplete Error")
                 self.present(errorAlert, animated: true, overwrite: true)
             } else {
                 alertController.dismiss(animated: true) {
@@ -163,10 +165,10 @@ class PasswordVC: UIViewController {
     }
     
     func generateAWSARN(completion: @escaping (_ endpoint : String?, _ errorMessage : String?)->Void) {
-//        #if targetEnvironment(simulator)
-//        completion("simulator", nil)
-//        return
-//        #endif
+        #if targetEnvironment(simulator)
+        completion("simulator", nil)
+       return
+        #endif
         let credentialsProvider = AWSCognitoCredentialsProvider(regionType: CognitoIdentityUserPoolRegion, identityPoolId: CognitoIdentityUserPoolId, identityProviderManager: AWSCredentialsManager.shared.userPool)
         let configuration = AWSServiceConfiguration(region: CognitoIdentityUserPoolRegion, credentialsProvider: credentialsProvider)
         AWSSNS.register(with: configuration!, forKey: "APSouth1SNS")
@@ -203,8 +205,10 @@ class PasswordVC: UIViewController {
         self.generateAWSARN { snsEndpoint, errorMessage in
             guard let _ = snsEndpoint else {
                 completion(errorMessage)
+                print("Inside register device snsEndpoint Error")
                 return
             }
+            print("Inside register device")
             UserDefaults.standard.set(snsEndpoint, forKey: "endpointArnForSNS")
             var dict = [String: Any]()
             dict["client"] = "mobile"
@@ -288,9 +292,11 @@ class PasswordVC: UIViewController {
     func present(_ viewControllerToPresent: UIViewController, animated flag: Bool, completion: (() -> Void)? = nil, overwrite: Bool = false) {
            if let vc = self.presentedViewController, overwrite {
                vc.dismiss(animated: flag) {
+                 print("Present if",vc)
                    super.present(viewControllerToPresent, animated: flag, completion: completion)
                }
            } else {
+            print("Present else")
                super.present(viewControllerToPresent, animated: flag, completion: completion)
            }
            

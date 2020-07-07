@@ -48,7 +48,7 @@ class MainVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let firstViewController = HomeVC()
+        let firstViewController = NoOrganisationVC()
         addChild(firstViewController)
         customView.addSubview(firstViewController.view)
         firstViewController.didMove(toParent: self)
